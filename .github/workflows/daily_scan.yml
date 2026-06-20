@@ -1,0 +1,41 @@
+name: Daily Stock Research Scan
+
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline test
+        run: python test_pipeline.py
+
+      - name: Run daily scan
+        env:
+          MUSAFFA_CLIENT_ID: ${{ secrets.MUSAFFA_CLIENT_ID }}
+          MUSAFFA_SECRET_KEY: ${{ secrets.MUSAFFA_SECRET_KEY }}
+        run: python run_daily.py
+
+      - name: Commit artifacts
+        run: |
+          git config user.name "daily-scanner-bot"
+          git config user.email "actions@github.com"
+          git add journal.json report.md
+          git diff --staged --quiet || git commit -m "Daily scan: $(date -u +%Y-%m-%d)"
+          git push

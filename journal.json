@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "scan_date": "2026-06-18",
+    "scanner_version": "2026.06.20",
+    "halal_filter_mode": "static_watchlist",
+    "final_watchlist": [
+      "AAPL",
+      "NVDA",
+      "AVGO",
+      "QCOM",
+      "AMD",
+      "TSM",
+      "LLY",
+      "JNJ",
+      "MRK",
+      "XOM",
+      "CVX",
+      "PG",
+      "KO",
+      "HD",
+      "V",
+      "MA",
+      "TSLA"
+    ],
+    "market_data_status": "no fresh market data / market holiday"
+  },
+  "pending_confirmation": [],
+  "open_positions": [],
+  "closed_trades": []
+}

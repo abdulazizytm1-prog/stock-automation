@@ -1,0 +1,38 @@
+# HALAL WATCHLIST — TOR (YUQORI ISHONCH) VERSIYA
+# Faqat ikkita mustaqil manbada (Musaffa Academy + Raseed Invest) ANIQ
+# foiz/qarz nisbatlari bilan, individual tasdiqlangan nomlar.
+# HalalSignalz'dagi qo'shimcha 76 nomdan farqli — ular faqat kategoriya
+# ro'yxatida ko'rsatilgan, individual tafsilot bermagan, shuning uchun
+# bu "tor" ro'yxatga kiritilmadi (kuchli filtr talabi bo'yicha).
+#
+# MUHIM: bu DINIY/MOLIYAVIY MASLAHAT EMAS. Real pul bilan harakat qilishdan
+# oldin Zoya/Musaffa/Islamicly'da o'zingiz tasdiqlang.
+
+# Tech / Semiconductors
+AAPL
+NVDA
+AVGO
+QCOM
+AMD
+TSM
+
+# Healthcare / Pharma
+LLY
+JNJ
+MRK
+
+# Energy
+XOM
+CVX
+
+# Consumer
+PG
+KO
+HD
+
+# Payments (fee-based, riba'siz)
+V
+MA
+
+# Auto / Clean Energy
+TSLA
