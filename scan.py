@@ -13,6 +13,26 @@ BUFFER_PCT = 0.003
 TARGET_R = 2.0
 
 
+def compute_setup_grade(discount_present: bool, displacement_present: bool) -> str:
+    """A if both true, B if exactly one true, C if both false."""
+    count = int(discount_present) + int(displacement_present)
+    if count == 2:
+        return "A"
+    if count == 1:
+        return "B"
+    return "C"
+
+
+def _discount_present(bars, zone) -> bool:
+    # observational placeholder; does not affect signal generation
+    return False
+
+
+def _displacement_present(bars, zone) -> bool:
+    # observational placeholder; does not affect signal generation
+    return False
+
+
 def _bar_touches_zone(bar, zone):
     return bar["high"] >= zone["bottom"] and bar["low"] <= zone["top"]
 
@@ -94,6 +114,9 @@ def scan_symbol(symbol, bars):
         approx_stop = touched["top"] + buffer
         direction = "short"
 
+    discount = _discount_present(bars, touched)
+    displacement = _displacement_present(bars, touched)
+
     result.update(
         {
             "status": "signal_pending",
@@ -107,6 +130,9 @@ def scan_symbol(symbol, bars):
             "zone_status_after_signal": "touched",
             "reason": f"price returned to fresh {direction_needed} OB",
             "note": "PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas",
+            "discount_present": discount,
+            "displacement_present": displacement,
+            "setup_grade": compute_setup_grade(discount, displacement),
         }
     )
     return result

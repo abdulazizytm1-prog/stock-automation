@@ -1,6 +1,12 @@
 """report.py - Kunlik hisobotni markdown formatda yig'adi."""
 
 
+def _pf_str(pf):
+    if pf is None:
+        return "n/a"
+    return "inf" if pf == float("inf") else f"{pf:.2f}"
+
+
 def generate_report(scan_results, journal_events, rolling, errors, today_date, run_meta=None):
     run_meta = run_meta or {}
     lines = []
@@ -20,6 +26,12 @@ def generate_report(scan_results, journal_events, rolling, errors, today_date, r
     lines.append(
         f"- Final scanned watchlist: {', '.join(run_meta.get('final_watchlist', [])) or 'none'}"
     )
+    if run_meta.get("total_symbols") is not None:
+        lines.append(
+            f"- Fetch success: {run_meta['fetch_success_count']}/{run_meta['total_symbols']}"
+        )
+        lines.append(f"- Fetch errors: {run_meta['fetch_error_count']}")
+        lines.append(f"- Failure rate: {run_meta['failure_rate_pct']:.1f}%")
     lines.append("")
 
     signals = [result for result in scan_results if result.get("status") == "signal_pending"]
@@ -43,6 +55,11 @@ def generate_report(scan_results, journal_events, rolling, errors, today_date, r
         lines.append(
             f"- Zone status: {result.get('zone_status_before_signal')} -> "
             f"{result.get('zone_status_after_signal')}"
+        )
+        lines.append(
+            f"- Grade: {result.get('setup_grade', 'C')} "
+            f"(discount={result.get('discount_present', False)}, "
+            f"displacement={result.get('displacement_present', False)})"
         )
         lines.append(f"- Note: {result['note']}")
         lines.append("")
@@ -87,11 +104,7 @@ def generate_report(scan_results, journal_events, rolling, errors, today_date, r
     if rolling["n"] == 0:
         lines.append("Hali yopilgan trade yo'q.")
     else:
-        profit_factor = (
-            f"{rolling['profit_factor']:.2f}"
-            if rolling["profit_factor"] != float("inf")
-            else "inf"
-        )
+        profit_factor = _pf_str(rolling["profit_factor"])
         lines.append(f"- Jami trade: {rolling['n']}")
         lines.append(f"- Win rate: {rolling['win_rate']:.1f}%")
         lines.append(f"- Avg R: {rolling['avg_r']:.2f}")
@@ -105,6 +118,20 @@ def generate_report(scan_results, journal_events, rolling, errors, today_date, r
             "- Eng yomon tickerlar: "
             + ", ".join(f"{symbol} ({value:+.2f}R)" for symbol, value in rolling["worst_tickers"])
         )
+        lines.append("")
+        lines.append("### Grade Breakdown")
+        lines.append("| Grade | n | Win Rate | Total R | PF |")
+        lines.append("|---|---|---|---|---|")
+        gb = rolling.get("grade_breakdown", {})
+        for grade in ("A", "B", "C"):
+            gs = gb.get(grade, {"n": 0, "win_rate": None, "total_r": 0.0, "profit_factor": None})
+            if gs["n"] == 0:
+                lines.append(f"| {grade} | 0 | n/a | 0.00 | n/a |")
+            else:
+                wr = f"{gs['win_rate']:.1f}%" if gs["win_rate"] is not None else "n/a"
+                tr = f"{gs['total_r']:+.2f}R"
+                pf = _pf_str(gs["profit_factor"])
+                lines.append(f"| {grade} | {gs['n']} | {wr} | {tr} | {pf} |")
     lines.append("")
 
     lines.append("---")

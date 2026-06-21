@@ -7,6 +7,8 @@ BUFFER_PCT = 0.003
 TARGET_R = 2.0
 TIME_STOP_DAYS = 20
 
+_GRADE_FIELDS = ("setup_grade", "discount_present", "displacement_present")
+
 
 def load_journal(path):
     if not os.path.exists(path):
@@ -28,6 +30,10 @@ def load_journal(path):
 def save_journal(journal, path):
     with open(path, "w") as f:
         json.dump(journal, f, indent=2)
+
+
+def _grade_defaults():
+    return {"setup_grade": "C", "discount_present": False, "displacement_present": False}
 
 
 def update_journal(journal, data_by_symbol, scan_results, run_meta=None):
@@ -81,6 +87,7 @@ def update_journal(journal, data_by_symbol, scan_results, run_meta=None):
             )
             continue
 
+        grade_data = {f: pending.get(f, _grade_defaults()[f]) for f in _GRADE_FIELDS}
         position = {
             "symbol": pending["symbol"],
             "direction": pending["direction"],
@@ -91,6 +98,7 @@ def update_journal(journal, data_by_symbol, scan_results, run_meta=None):
             "risk": risk,
             "zone_type": "OB",
             "days_held": 0,
+            **grade_data,
         }
         journal["open_positions"].append(position)
         events["confirmed"].append(position)
@@ -159,6 +167,7 @@ def update_journal(journal, data_by_symbol, scan_results, run_meta=None):
     }
     for result in scan_results:
         if result.get("status") == "signal_pending" and result["symbol"] not in tracked_symbols:
+            defaults = _grade_defaults()
             entry = {
                 "symbol": result["symbol"],
                 "direction": result["direction"],
@@ -167,11 +176,35 @@ def update_journal(journal, data_by_symbol, scan_results, run_meta=None):
                 "detected_date": result["date"],
                 "zone_status_before_signal": result.get("zone_status_before_signal"),
                 "zone_status_after_signal": result.get("zone_status_after_signal"),
+                "setup_grade": result.get("setup_grade", defaults["setup_grade"]),
+                "discount_present": result.get("discount_present", defaults["discount_present"]),
+                "displacement_present": result.get(
+                    "displacement_present", defaults["displacement_present"]
+                ),
             }
             journal["pending_confirmation"].append(entry)
             events["new_pending"].append(entry)
 
     return journal, events
+
+
+def _grade_stats(trades, grade):
+    g = [t for t in trades if t.get("setup_grade", "C") == grade]
+    n = len(g)
+    if n == 0:
+        return {"n": 0, "win_rate": None, "total_r": 0.0, "profit_factor": None}
+    wins = [t for t in g if t["r_multiple"] > 0]
+    losses = [t for t in g if t["r_multiple"] <= 0]
+    total_r = sum(t["r_multiple"] for t in g)
+    gross_win = sum(t["r_multiple"] for t in wins)
+    gross_loss = abs(sum(t["r_multiple"] for t in losses))
+    pf = gross_win / gross_loss if gross_loss > 0 else float("inf")
+    return {
+        "n": n,
+        "win_rate": len(wins) / n * 100,
+        "total_r": total_r,
+        "profit_factor": pf,
+    }
 
 
 def rolling_stats(journal, last_n=None):
@@ -202,4 +235,9 @@ def rolling_stats(journal, last_n=None):
         "profit_factor": profit_factor,
         "best_tickers": best,
         "worst_tickers": worst,
+        "grade_breakdown": {
+            "A": _grade_stats(trades, "A"),
+            "B": _grade_stats(trades, "B"),
+            "C": _grade_stats(trades, "C"),
+        },
     }
