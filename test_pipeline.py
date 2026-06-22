@@ -12,6 +12,13 @@ from alert_dedupe import (
     save_alert_dedupe,
     was_alert_sent,
 )
+from analytics import (
+    compute_edge_analytics,
+    grade_stats,
+    holding_stats,
+    outcome_distribution,
+    symbol_stats,
+)
 from audit_logger import log_event
 from journal import load_journal, rolling_stats, save_journal, update_journal
 from report import generate_report
@@ -524,6 +531,187 @@ def test_build_summary_message_includes_grade():
     print("PASS: build_summary_message includes grade info for new signals and breakdown.")
 
 
+def test_grade_win_rate_calculation():
+    """grade_stats returns correct totals, wins, losses, and win_rate for each grade."""
+    trades = [
+        # Grade A: 2 wins, 1 loss
+        {"setup_grade": "A", "r_multiple": 2.0},
+        {"setup_grade": "A", "r_multiple": 1.5},
+        {"setup_grade": "A", "r_multiple": -1.0},
+        # Grade B: 0 wins, 1 loss
+        {"setup_grade": "B", "r_multiple": -0.5},
+        # Grade C: 1 win (missing grade defaults to C), plus one explicit C win
+        {"r_multiple": 1.0},  # no grade key — defaults to C
+        {"setup_grade": "C", "r_multiple": 2.0},
+    ]
+    result = grade_stats(trades)
+
+    assert result["A"]["total"] == 3
+    assert result["A"]["wins"] == 2
+    assert result["A"]["losses"] == 1
+    assert abs(result["A"]["win_rate"] - 66.666) < 0.01
+
+    assert result["B"]["total"] == 1
+    assert result["B"]["wins"] == 0
+    assert result["B"]["losses"] == 1
+    assert result["B"]["win_rate"] == 0.0
+
+    assert result["C"]["total"] == 2
+    assert result["C"]["wins"] == 2
+    assert result["C"]["losses"] == 0
+    assert result["C"]["win_rate"] == 100.0
+
+    # Grade with zero trades returns None win_rate
+    assert grade_stats([])["A"]["win_rate"] is None
+
+    print("PASS: grade_stats returns correct totals/wins/losses/win_rate.")
+
+
+def test_symbol_statistics_calculation():
+    """symbol_stats filters by min_trades, calculates per-symbol win rates correctly."""
+    trades = [
+        # AAPL: 4 trades, 3 wins → 75%
+        {"symbol": "AAPL", "r_multiple": 2.0},
+        {"symbol": "AAPL", "r_multiple": 1.5},
+        {"symbol": "AAPL", "r_multiple": 1.0},
+        {"symbol": "AAPL", "r_multiple": -1.0},
+        # MSFT: 2 trades — below default min_trades=3, should be excluded
+        {"symbol": "MSFT", "r_multiple": 1.0},
+        {"symbol": "MSFT", "r_multiple": -1.0},
+        # GOOGL: 3 trades, 0 wins → 0%
+        {"symbol": "GOOGL", "r_multiple": -1.0},
+        {"symbol": "GOOGL", "r_multiple": -0.5},
+        {"symbol": "GOOGL", "r_multiple": -2.0},
+    ]
+    result = symbol_stats(trades, min_trades=3)
+
+    assert "AAPL" in result, "AAPL (4 trades) should be included"
+    assert result["AAPL"]["total"] == 4
+    assert abs(result["AAPL"]["win_rate"] - 75.0) < 0.01
+
+    assert "MSFT" not in result, "MSFT (2 trades) should be excluded by min_trades=3"
+
+    assert "GOOGL" in result, "GOOGL (3 trades) should be included"
+    assert result["GOOGL"]["total"] == 3
+    assert result["GOOGL"]["win_rate"] == 0.0
+
+    # Custom min_trades=2 includes MSFT
+    result2 = symbol_stats(trades, min_trades=2)
+    assert "MSFT" in result2
+
+    # Empty trades
+    assert symbol_stats([]) == {}
+
+    print("PASS: symbol_stats correctly filters by min_trades and calculates win rates.")
+
+
+def test_outcome_distribution_calculation():
+    """outcome_distribution counts TARGET_HIT / STOP_LOSS / other correctly."""
+    trades = [
+        {"exit_reason": "target"},
+        {"exit_reason": "target"},
+        {"exit_reason": "stop"},
+        {"exit_reason": "time_stop"},
+        {"exit_reason": "time_stop"},
+        {},  # missing exit_reason → other
+    ]
+    result = outcome_distribution(trades)
+
+    assert result["TARGET_HIT"] == 2
+    assert result["STOP_LOSS"] == 1
+    assert result["other"] == 3  # time_stop x2 + missing x1
+
+    # Empty
+    empty = outcome_distribution([])
+    assert empty == {"TARGET_HIT": 0, "STOP_LOSS": 0, "other": 0}
+
+    print("PASS: outcome_distribution counts TARGET_HIT/STOP_LOSS/other correctly.")
+
+
+def test_backward_compatibility_old_journal():
+    """
+    analytics functions never crash on old journal records that lack
+    setup_grade, days_held, exit_reason, r_multiple, or symbol fields.
+    """
+    # Completely empty journal
+    empty_journal = {"closed_trades": [], "pending_confirmation": [], "open_positions": []}
+    ea = compute_edge_analytics(empty_journal)
+    assert ea["total_closed"] == 0
+    assert ea["grade_stats"]["A"]["win_rate"] is None
+    assert ea["symbol_stats"] == {}
+    assert ea["holding_stats"]["avg"] is None
+    assert ea["holding_stats"]["median"] is None
+    assert ea["outcome_distribution"]["TARGET_HIT"] == 0
+
+    # Old records missing every optional field
+    old_trades = [
+        {"symbol": "AAPL"},                             # no r_multiple, no grade, no days_held
+        {"symbol": "AAPL", "r_multiple": 1.0},          # no grade → defaults to C
+        {"r_multiple": -1.0},                            # no symbol
+        {"symbol": "MSFT", "exit_reason": "target"},    # no r_multiple
+    ]
+    old_journal = {"closed_trades": old_trades}
+    ea2 = compute_edge_analytics(old_journal)
+    assert ea2["total_closed"] == 4       # counted, not crashed
+    hs = ea2["holding_stats"]
+    assert hs["avg"] is None              # no days_held on any record
+    assert hs["median"] is None
+
+    # holding_stats with one valid and one invalid days_held
+    mixed_trades = [
+        {"days_held": 5},
+        {"days_held": "bad"},      # string → skipped
+        {"days_held": None},       # None → skipped
+        {},                        # missing → skipped
+        {"days_held": 3},
+    ]
+    hs2 = holding_stats(mixed_trades)
+    assert hs2["avg"] == 4.0       # (5+3)/2
+    assert hs2["median"] == 4.0
+
+    # Report generation with analytics on a journal with no trades (no crash)
+    rolling_empty = {"n": 0}
+    report = generate_report([], {
+        "new_pending": [], "confirmed": [], "closed": [], "rejected": [], "ambiguity_count": 0
+    }, rolling_empty, {}, "2024-01-24", edge_analytics=ea)
+    assert "Edge Validation" in report
+
+    print("PASS: analytics functions are backward-compatible with old/incomplete journal records.")
+
+
+def test_edge_validation_in_report():
+    """generate_report includes Edge Validation section with correct data when passed analytics."""
+    # Run fixture sim to get real closed trades
+    journal, events, run_meta, rolling = _make_fixture_journal_and_events()
+    ea = compute_edge_analytics(journal)
+
+    report = generate_report(
+        [], events, rolling, {}, run_meta["scan_date"],
+        run_meta=run_meta, edge_analytics=ea,
+    )
+
+    assert "# Edge Validation" in report, "Report must contain Edge Validation header"
+    assert "## Grade Performance" in report
+    assert "## Symbol Performance" in report
+    assert "## Outcome Distribution" in report
+    assert "## Holding Statistics" in report
+    assert "TARGET_HIT" in report
+    assert "STOP_LOSS" in report
+
+    # All 3 fixture trades hit target (100% win rate) so TARGET_HIT should be 3
+    assert "| TARGET_HIT | 3 |" in report, \
+        f"Expected 3 TARGET_HIT in fixture run, report excerpt:\n{report[-800:]}"
+
+    # Grade C should show 3 trades (placeholders return False/False → all grade C)
+    assert "| C | 3 |" in report, "All fixture trades should be grade C"
+
+    # Holding stats must not be N/A (fixture trades have days_held tracked)
+    assert "Average Holding Days: N/A" not in report, \
+        "Holding stats should be available from fixture trades"
+
+    print("PASS: Edge Validation section in report shows correct grade/outcome/holding data.")
+
+
 if __name__ == "__main__":
     main()
     print("\n=== SPRINT 1 TESTLAR ===")
@@ -543,3 +731,10 @@ if __name__ == "__main__":
     test_alert_dedupe_json_updated_after_marking()
     test_build_summary_message_includes_grade()
     print("\nPASS: Barcha Sprint 3 testlar muvaffaqiyatli o'tdi.")
+    print("\n=== SPRINT 4 TESTLAR ===")
+    test_grade_win_rate_calculation()
+    test_symbol_statistics_calculation()
+    test_outcome_distribution_calculation()
+    test_backward_compatibility_old_journal()
+    test_edge_validation_in_report()
+    print("\nPASS: Barcha Sprint 4 testlar muvaffaqiyatli o'tdi.")

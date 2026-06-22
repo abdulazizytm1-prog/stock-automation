@@ -8,6 +8,7 @@ try:
 except ImportError:  # pragma: no cover
     load_dotenv = None
 
+from analytics import compute_edge_analytics
 from audit_logger import log_event
 from fetch_data import fetch_all
 from journal import load_journal, rolling_stats, save_journal, update_journal
@@ -171,7 +172,11 @@ def main():
     )
 
     rolling = rolling_stats(journal)
-    report_md = generate_report(scan_results, events, rolling, errors, today_date, run_meta=run_meta)
+    edge_analytics = compute_edge_analytics(journal)
+    report_md = generate_report(
+        scan_results, events, rolling, errors, today_date,
+        run_meta=run_meta, edge_analytics=edge_analytics,
+    )
     with open(REPORT_PATH, "w") as f:
         f.write(report_md)
     log_event("report_written", path=LOG_PATH, details={"path": REPORT_PATH})

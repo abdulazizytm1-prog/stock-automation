@@ -7,7 +7,9 @@ def _pf_str(pf):
     return "inf" if pf == float("inf") else f"{pf:.2f}"
 
 
-def generate_report(scan_results, journal_events, rolling, errors, today_date, run_meta=None):
+def generate_report(
+    scan_results, journal_events, rolling, errors, today_date, run_meta=None, edge_analytics=None
+):
     run_meta = run_meta or {}
     lines = []
     lines.append("# DAILY TRADING RESEARCH REPORT")
@@ -143,4 +145,68 @@ def generate_report(scan_results, journal_events, rolling, errors, today_date, r
     lines.append("| FVG | DISABLED | 3 testda (n=3, n=26, n=427) 0 trade |")
     lines.append("")
 
+    if edge_analytics is not None:
+        lines.extend(_render_edge_validation(edge_analytics))
+
     return "\n".join(lines)
+
+
+def _render_edge_validation(ea):
+    """Render the Edge Validation section from compute_edge_analytics() output."""
+    lines = []
+    lines.append("---")
+    lines.append("")
+    lines.append("# Edge Validation")
+    lines.append("")
+    lines.append(f"*(Based on {ea.get('total_closed', 0)} closed trade(s))*")
+    lines.append("")
+
+    # Grade Performance
+    lines.append("## Grade Performance")
+    lines.append("")
+    lines.append("| Grade | Trades | Wins | Losses | Win Rate |")
+    lines.append("|---|---|---|---|---|")
+    gs = ea.get("grade_stats", {})
+    for grade in ("A", "B", "C"):
+        g = gs.get(grade, {"total": 0, "wins": 0, "losses": 0, "win_rate": None})
+        wr = f"{g['win_rate']:.1f}%" if g["win_rate"] is not None else "n/a"
+        lines.append(f"| {grade} | {g['total']} | {g['wins']} | {g['losses']} | {wr} |")
+    lines.append("")
+
+    # Symbol Performance
+    lines.append("## Symbol Performance")
+    lines.append("")
+    lines.append("*Only symbols with ≥3 completed trades*")
+    lines.append("")
+    ss = ea.get("symbol_stats", {})
+    if ss:
+        lines.append("| Ticker | Trades | Win Rate |")
+        lines.append("|---|---|---|")
+        for ticker, st in sorted(ss.items()):
+            lines.append(f"| {ticker} | {st['total']} | {st['win_rate']:.1f}% |")
+    else:
+        lines.append("No symbol has reached the 3-trade minimum yet.")
+    lines.append("")
+
+    # Outcome Distribution
+    lines.append("## Outcome Distribution")
+    lines.append("")
+    lines.append("| Outcome | Count |")
+    lines.append("|---|---|")
+    od = ea.get("outcome_distribution", {"TARGET_HIT": 0, "STOP_LOSS": 0, "other": 0})
+    lines.append(f"| TARGET_HIT | {od.get('TARGET_HIT', 0)} |")
+    lines.append(f"| STOP_LOSS | {od.get('STOP_LOSS', 0)} |")
+    lines.append(f"| Other | {od.get('other', 0)} |")
+    lines.append("")
+
+    # Holding Statistics
+    lines.append("## Holding Statistics")
+    lines.append("")
+    hs = ea.get("holding_stats", {"avg": None, "median": None})
+    avg_str = f"{hs['avg']:.1f}" if hs.get("avg") is not None else "N/A"
+    med_str = f"{hs['median']:.1f}" if hs.get("median") is not None else "N/A"
+    lines.append(f"- Average Holding Days: {avg_str}")
+    lines.append(f"- Median Holding Days: {med_str}")
+    lines.append("")
+
+    return lines
