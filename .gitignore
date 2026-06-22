@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+
+logs/
+journal.json
+report.md
+data/alert_dedupe.json
