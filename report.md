@@ -103,3 +103,36 @@ Hali yopilgan trade yo'q.
 |---|---|---|
 | OB wick-touch | RESEARCH CANDIDATE | n=427, PF=1.03 costsiz, cost bilan FAIL |
 | FVG | DISABLED | 3 testda (n=3, n=26, n=427) 0 trade |
+
+---
+
+# Edge Validation
+
+*(Based on 0 closed trade(s))*
+
+## Grade Performance
+
+| Grade | Trades | Wins | Losses | Win Rate |
+|---|---|---|---|---|
+| A | 0 | 0 | 0 | n/a |
+| B | 0 | 0 | 0 | n/a |
+| C | 0 | 0 | 0 | n/a |
+
+## Symbol Performance
+
+*Only symbols with ≥3 completed trades*
+
+No symbol has reached the 3-trade minimum yet.
+
+## Outcome Distribution
+
+| Outcome | Count |
+|---|---|
+| TARGET_HIT | 0 |
+| STOP_LOSS | 0 |
+| Other | 0 |
+
+## Holding Statistics
+
+- Average Holding Days: N/A
+- Median Holding Days: N/A
