@@ -8,6 +8,9 @@
 - Scanner version: 2026.06.20
 - Market data status: no fresh market data / market holiday
 - Final scanned watchlist: AAPL, NVDA, AVGO, QCOM, AMD, TSM, LLY, JNJ, MRK, XOM, CVX, PG, KO, HD, V, MA, TSLA
+- Fetch success: 17/17
+- Fetch errors: 0
+- Failure rate: 0.0%
 
 ## Signals found: 0
 

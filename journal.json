@@ -22,7 +22,11 @@
       "MA",
       "TSLA"
     ],
-    "market_data_status": "no fresh market data / market holiday"
+    "market_data_status": "no fresh market data / market holiday",
+    "total_symbols": 17,
+    "fetch_success_count": 17,
+    "fetch_error_count": 0,
+    "failure_rate_pct": 0.0
   },
   "pending_confirmation": [],
   "open_positions": [],
