@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-06-23",
+    "scan_date": "2026-06-24",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -22,21 +22,24 @@
       "MA",
       "TSLA"
     ],
-    "market_data_status": "no fresh market data / market holiday",
+    "market_data_status": "fresh",
     "total_symbols": 17,
     "fetch_success_count": 17,
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [
+  "pending_confirmation": [],
+  "open_positions": [
     {
       "symbol": "TSM",
       "direction": "long",
-      "zone_top": 442.5,
-      "zone_bottom": 431.6400146484375,
-      "detected_date": "2026-06-23",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
+      "entry_date": "2026-06-24",
+      "entry_price": 433.9750061035156,
+      "stop": 430.33808963012694,
+      "target": 441.248839050293,
+      "risk": 3.6369164733886805,
+      "zone_type": "OB",
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -44,11 +47,13 @@
     {
       "symbol": "MRK",
       "direction": "short",
-      "zone_top": 121.83386318594597,
-      "zone_bottom": 119.09356716143911,
-      "detected_date": "2026-06-23",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
+      "entry_date": "2026-06-24",
+      "entry_price": 120.9000015258789,
+      "stop": 122.1965631905236,
+      "target": 118.30687819658951,
+      "risk": 1.296561664644699,
+      "zone_type": "OB",
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -56,16 +61,17 @@
     {
       "symbol": "HD",
       "direction": "long",
-      "zone_top": 324.0,
-      "zone_bottom": 318.79998779296875,
-      "detected_date": "2026-06-23",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
+      "entry_date": "2026-06-24",
+      "entry_price": 329.1199951171875,
+      "stop": 317.81262780761716,
+      "target": 351.7347297363282,
+      "risk": 11.307367309570338,
+      "zone_type": "OB",
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
     }
   ],
-  "open_positions": [],
   "closed_trades": []
 }
