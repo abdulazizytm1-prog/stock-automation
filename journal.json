@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-06-22",
+    "scan_date": "2026-06-23",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,7 +28,44 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
+  "pending_confirmation": [
+    {
+      "symbol": "TSM",
+      "direction": "long",
+      "zone_top": 442.5,
+      "zone_bottom": 431.6400146484375,
+      "detected_date": "2026-06-23",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "MRK",
+      "direction": "short",
+      "zone_top": 121.83386318594597,
+      "zone_bottom": 119.09356716143911,
+      "detected_date": "2026-06-23",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "HD",
+      "direction": "long",
+      "zone_top": 324.0,
+      "zone_bottom": 318.79998779296875,
+      "detected_date": "2026-06-23",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "open_positions": [],
   "closed_trades": []
 }
