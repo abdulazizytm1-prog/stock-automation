@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-06-24",
+    "scan_date": "2026-06-25",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -31,6 +31,22 @@
   "pending_confirmation": [],
   "open_positions": [
     {
+      "symbol": "HD",
+      "direction": "long",
+      "entry_date": "2026-06-24",
+      "entry_price": 329.1199951171875,
+      "stop": 317.81262780761716,
+      "target": 351.7347297363282,
+      "risk": 11.307367309570338,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
+  "closed_trades": [
+    {
       "symbol": "TSM",
       "direction": "long",
       "entry_date": "2026-06-24",
@@ -39,10 +55,14 @@
       "target": 441.248839050293,
       "risk": 3.6369164733886805,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
-      "displacement_present": false
+      "displacement_present": false,
+      "exit_date": "2026-06-25",
+      "exit_price": 441.248839050293,
+      "exit_reason": "target",
+      "r_multiple": 2.0
     },
     {
       "symbol": "MRK",
@@ -53,25 +73,14 @@
       "target": 118.30687819658951,
       "risk": 1.296561664644699,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "HD",
-      "direction": "long",
-      "entry_date": "2026-06-24",
-      "entry_price": 329.1199951171875,
-      "stop": 317.81262780761716,
-      "target": 351.7347297363282,
-      "risk": 11.307367309570338,
-      "zone_type": "OB",
-      "days_held": 0,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
+      "displacement_present": false,
+      "exit_date": "2026-06-25",
+      "exit_price": 122.1965631905236,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
     }
-  ],
-  "closed_trades": []
+  ]
 }

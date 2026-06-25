@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-06-24
+**Date:** 2026-06-25
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -55,8 +55,8 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 11) CVX
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 12) PG
 - No trade
@@ -67,8 +67,8 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 14) HD
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 15) V
 - No trade
@@ -86,15 +86,30 @@
 
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
-- Tasdiqlangan (open position bo'ldi): 3
-- Yopilgan trade: 0
+- Tasdiqlangan (open position bo'ldi): 0
+- Yopilgan trade: 2
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
+- Closed TSM: target, R=2.00
+- Closed MRK: stop, R=-1.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-Hali yopilgan trade yo'q.
+- Jami trade: 2
+- Win rate: 50.0%
+- Avg R: 0.50
+- Total R: 1.00
+- PF: 2.00
+- Eng yaxshi tickerlar: TSM (+2.00R), MRK (-1.00R)
+- Eng yomon tickerlar: MRK (-1.00R), TSM (+2.00R)
+
+### Grade Breakdown
+| Grade | n | Win Rate | Total R | PF |
+|---|---|---|---|---|
+| A | 0 | n/a | 0.00 | n/a |
+| B | 0 | n/a | 0.00 | n/a |
+| C | 2 | 50.0% | +1.00R | 2.00 |
 
 ---
 
@@ -108,7 +123,7 @@ Hali yopilgan trade yo'q.
 
 # Edge Validation
 
-*(Based on 0 closed trade(s))*
+*(Based on 2 closed trade(s))*
 
 ## Grade Performance
 
@@ -116,7 +131,7 @@ Hali yopilgan trade yo'q.
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 0 | 0 | 0 | n/a |
+| C | 2 | 1 | 1 | 50.0% |
 
 ## Symbol Performance
 
@@ -128,11 +143,11 @@ No symbol has reached the 3-trade minimum yet.
 
 | Outcome | Count |
 |---|---|
-| TARGET_HIT | 0 |
-| STOP_LOSS | 0 |
+| TARGET_HIT | 1 |
+| STOP_LOSS | 1 |
 | Other | 0 |
 
 ## Holding Statistics
 
-- Average Holding Days: N/A
-- Median Holding Days: N/A
+- Average Holding Days: 1.0
+- Median Holding Days: 1.0
