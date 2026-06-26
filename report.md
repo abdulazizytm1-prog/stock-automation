@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-06-25
+**Date:** 2026-06-26
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -87,11 +87,9 @@
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
 - Tasdiqlangan (open position bo'ldi): 0
-- Yopilgan trade: 2
+- Yopilgan trade: 0
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed TSM: target, R=2.00
-- Closed MRK: stop, R=-1.00
 
 ---
 
