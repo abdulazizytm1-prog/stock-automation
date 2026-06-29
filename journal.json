@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-06-26",
+    "scan_date": "2026-06-29",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,7 +28,32 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
+  "pending_confirmation": [
+    {
+      "symbol": "V",
+      "direction": "long",
+      "zone_top": 339.94000244140625,
+      "zone_bottom": 330.07000732421875,
+      "detected_date": "2026-06-29",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "TSLA",
+      "direction": "short",
+      "zone_top": 414.75,
+      "zone_bottom": 394.3999938964844,
+      "detected_date": "2026-06-29",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "open_positions": [
     {
       "symbol": "HD",
@@ -39,7 +64,7 @@
       "target": 351.7347297363282,
       "risk": 11.307367309570338,
       "zone_type": "OB",
-      "days_held": 3,
+      "days_held": 6,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
