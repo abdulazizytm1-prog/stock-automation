@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-06-29",
+    "scan_date": "2026-06-30",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,23 +30,11 @@
   },
   "pending_confirmation": [
     {
-      "symbol": "V",
+      "symbol": "PG",
       "direction": "long",
-      "zone_top": 339.94000244140625,
-      "zone_bottom": 330.07000732421875,
-      "detected_date": "2026-06-29",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "TSLA",
-      "direction": "short",
-      "zone_top": 414.75,
-      "zone_bottom": 394.3999938964844,
-      "detected_date": "2026-06-29",
+      "zone_top": 146.5500030517578,
+      "zone_bottom": 145.02000427246094,
+      "detected_date": "2026-06-30",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -56,15 +44,29 @@
   ],
   "open_positions": [
     {
-      "symbol": "HD",
+      "symbol": "V",
       "direction": "long",
-      "entry_date": "2026-06-24",
-      "entry_price": 329.1199951171875,
-      "stop": 317.81262780761716,
-      "target": 351.7347297363282,
-      "risk": 11.307367309570338,
+      "entry_date": "2026-06-30",
+      "entry_price": 341.760009765625,
+      "stop": 329.04472729492187,
+      "target": 367.19057470703126,
+      "risk": 12.71528247070313,
       "zone_type": "OB",
-      "days_held": 6,
+      "days_held": 0,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "TSLA",
+      "direction": "short",
+      "entry_date": "2026-06-30",
+      "entry_price": 406.0,
+      "stop": 415.968,
+      "target": 386.06399999999996,
+      "risk": 9.968000000000018,
+      "zone_type": "OB",
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -106,6 +108,24 @@
       "exit_price": 122.1965631905236,
       "exit_reason": "stop",
       "r_multiple": -1.0
+    },
+    {
+      "symbol": "HD",
+      "direction": "long",
+      "entry_date": "2026-06-24",
+      "entry_price": 329.1199951171875,
+      "stop": 317.81262780761716,
+      "target": 351.7347297363282,
+      "risk": 11.307367309570338,
+      "zone_type": "OB",
+      "days_held": 10,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-06-30",
+      "exit_price": 351.7347297363282,
+      "exit_reason": "target",
+      "r_multiple": 2.0
     }
   ]
 }
