@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-06-30",
+    "scan_date": "2026-07-01",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,11 +30,23 @@
   },
   "pending_confirmation": [
     {
-      "symbol": "PG",
+      "symbol": "AAPL",
+      "direction": "short",
+      "zone_top": 300.4800109863281,
+      "zone_bottom": 293.9700012207031,
+      "detected_date": "2026-07-01",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "TSM",
       "direction": "long",
-      "zone_top": 146.5500030517578,
-      "zone_bottom": 145.02000427246094,
-      "detected_date": "2026-06-30",
+      "zone_top": 452.8999938964844,
+      "zone_bottom": 432.44000244140625,
+      "detected_date": "2026-07-01",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -52,19 +64,19 @@
       "target": 367.19057470703126,
       "risk": 12.71528247070313,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
     },
     {
-      "symbol": "TSLA",
-      "direction": "short",
-      "entry_date": "2026-06-30",
-      "entry_price": 406.0,
-      "stop": 415.968,
-      "target": 386.06399999999996,
-      "risk": 9.968000000000018,
+      "symbol": "PG",
+      "direction": "long",
+      "entry_date": "2026-07-01",
+      "entry_price": 146.52499389648438,
+      "stop": 144.5804292907715,
+      "target": 150.41412310791014,
+      "risk": 1.944564605712884,
       "zone_type": "OB",
       "days_held": 0,
       "setup_grade": "C",
@@ -126,6 +138,24 @@
       "exit_price": 351.7347297363282,
       "exit_reason": "target",
       "r_multiple": 2.0
+    },
+    {
+      "symbol": "TSLA",
+      "direction": "short",
+      "entry_date": "2026-06-30",
+      "entry_price": 406.0,
+      "stop": 415.968,
+      "target": 386.06399999999996,
+      "risk": 9.968000000000018,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-01",
+      "exit_price": 415.968,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
     }
   ]
 }
