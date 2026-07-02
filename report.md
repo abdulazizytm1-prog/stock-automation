@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-07-01
+**Date:** 2026-07-02
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -12,7 +12,7 @@
 - Fetch errors: 0
 - Failure rate: 0.0%
 
-## Signals found: 2
+## Signals found: 1
 
 ### 1) AAPL
 - Setup: OB wick touch (Research Candidate)
@@ -26,33 +26,25 @@
 - Grade: C (discount=False, displacement=False)
 - Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
 
-### 2) TSM
-- Setup: OB wick touch (Research Candidate)
-- Trend: Bullish
-- Reason: price returned to fresh bullish OB
-- Entry: next day open
-- SL: zone low +/- 0.3%
-- TP: 2R
-- Status: pending
-- Zone status: fresh -> touched
-- Grade: C (discount=False, displacement=False)
-- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
-
-### 3) NVDA
-- No valid setup
-- Reason: trend filter failed (RANGE)
-
-### 4) AVGO
+### 2) NVDA
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 5) QCOM
+### 3) AVGO
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 4) QCOM
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 6) AMD
-- No valid setup
-- Reason: trend filter failed (RANGE)
+### 5) AMD
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 6) TSM
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 7) LLY
 - No trade
@@ -63,20 +55,20 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 9) MRK
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 10) XOM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 11) CVX
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 12) PG
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 13) KO
 - No trade
@@ -101,22 +93,22 @@
 ---
 
 ## Bugungi journal hodisalari
-- Yangi pending signal: 2
-- Tasdiqlangan (open position bo'ldi): 1
+- Yangi pending signal: 0
+- Tasdiqlangan (open position bo'ldi): 2
 - Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed TSLA: stop, R=-1.00
+- Closed PG: target, R=2.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 4
-- Win rate: 50.0%
-- Avg R: 0.50
-- Total R: 2.00
-- PF: 2.00
-- Eng yaxshi tickerlar: TSM (+2.00R), HD (+2.00R), MRK (-1.00R)
+- Jami trade: 5
+- Win rate: 60.0%
+- Avg R: 0.80
+- Total R: 4.00
+- PF: 3.00
+- Eng yaxshi tickerlar: TSM (+2.00R), HD (+2.00R), PG (+2.00R)
 - Eng yomon tickerlar: MRK (-1.00R), TSLA (-1.00R), TSM (+2.00R)
 
 ### Grade Breakdown
@@ -124,7 +116,7 @@
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 4 | 50.0% | +2.00R | 2.00 |
+| C | 5 | 60.0% | +4.00R | 3.00 |
 
 ---
 
@@ -138,7 +130,7 @@
 
 # Edge Validation
 
-*(Based on 4 closed trade(s))*
+*(Based on 5 closed trade(s))*
 
 ## Grade Performance
 
@@ -146,7 +138,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 4 | 2 | 2 | 50.0% |
+| C | 5 | 3 | 2 | 60.0% |
 
 ## Symbol Performance
 
@@ -158,11 +150,11 @@ No symbol has reached the 3-trade minimum yet.
 
 | Outcome | Count |
 |---|---|
-| TARGET_HIT | 2 |
+| TARGET_HIT | 3 |
 | STOP_LOSS | 2 |
 | Other | 0 |
 
 ## Holding Statistics
 
-- Average Holding Days: 3.2
+- Average Holding Days: 2.8
 - Median Holding Days: 1.0

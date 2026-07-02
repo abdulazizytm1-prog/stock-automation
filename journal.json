@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-01",
+    "scan_date": "2026-07-02",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,32 +28,7 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [
-    {
-      "symbol": "AAPL",
-      "direction": "short",
-      "zone_top": 300.4800109863281,
-      "zone_bottom": 293.9700012207031,
-      "detected_date": "2026-07-01",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "TSM",
-      "direction": "long",
-      "zone_top": 452.8999938964844,
-      "zone_bottom": 432.44000244140625,
-      "detected_date": "2026-07-01",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    }
-  ],
+  "pending_confirmation": [],
   "open_positions": [
     {
       "symbol": "V",
@@ -64,19 +39,33 @@
       "target": 367.19057470703126,
       "risk": 12.71528247070313,
       "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 3,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
     },
     {
-      "symbol": "PG",
+      "symbol": "AAPL",
+      "direction": "short",
+      "entry_date": "2026-07-02",
+      "entry_price": 294.0849914550781,
+      "stop": 301.3622659606934,
+      "target": 279.5304424438476,
+      "risk": 7.277274505615253,
+      "zone_type": "OB",
+      "days_held": 0,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "TSM",
       "direction": "long",
-      "entry_date": "2026-07-01",
-      "entry_price": 146.52499389648438,
-      "stop": 144.5804292907715,
-      "target": 150.41412310791014,
-      "risk": 1.944564605712884,
+      "entry_date": "2026-07-02",
+      "entry_price": 450.5400085449219,
+      "stop": 431.0883824157715,
+      "target": 489.44326080322264,
+      "risk": 19.451626129150384,
       "zone_type": "OB",
       "days_held": 0,
       "setup_grade": "C",
@@ -156,6 +145,24 @@
       "exit_price": 415.968,
       "exit_reason": "stop",
       "r_multiple": -1.0
+    },
+    {
+      "symbol": "PG",
+      "direction": "long",
+      "entry_date": "2026-07-01",
+      "entry_price": 146.52499389648438,
+      "stop": 144.5804292907715,
+      "target": 150.41412310791014,
+      "risk": 1.944564605712884,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-02",
+      "exit_price": 150.41412310791014,
+      "exit_reason": "target",
+      "r_multiple": 2.0
     }
   ]
 }
