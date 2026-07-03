@@ -6,7 +6,7 @@
 
 - Halal filter mode: static_watchlist
 - Scanner version: 2026.06.20
-- Market data status: fresh
+- Market data status: no fresh market data / market holiday
 - Final scanned watchlist: AAPL, NVDA, AVGO, QCOM, AMD, TSM, LLY, JNJ, MRK, XOM, CVX, PG, KO, HD, V, MA, TSLA
 - Fetch success: 17/17
 - Fetch errors: 0
@@ -94,11 +94,10 @@
 
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
-- Tasdiqlangan (open position bo'ldi): 2
-- Yopilgan trade: 1
+- Tasdiqlangan (open position bo'ldi): 0
+- Yopilgan trade: 0
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed PG: target, R=2.00
 
 ---
 

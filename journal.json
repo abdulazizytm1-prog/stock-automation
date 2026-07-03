@@ -22,7 +22,7 @@
       "MA",
       "TSLA"
     ],
-    "market_data_status": "fresh",
+    "market_data_status": "no fresh market data / market holiday",
     "total_symbols": 17,
     "fetch_success_count": 17,
     "fetch_error_count": 0,
@@ -39,7 +39,7 @@
       "target": 367.19057470703126,
       "risk": 12.71528247070313,
       "zone_type": "OB",
-      "days_held": 3,
+      "days_held": 5,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
