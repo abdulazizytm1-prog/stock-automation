@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-06",
+    "scan_date": "2026-07-07",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,20 +28,7 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [
-    {
-      "symbol": "AVGO",
-      "direction": "short",
-      "zone_top": 379.6199951171875,
-      "zone_bottom": 370.6400146484375,
-      "detected_date": "2026-07-06",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    }
-  ],
+  "pending_confirmation": [],
   "open_positions": [
     {
       "symbol": "V",
@@ -52,21 +39,21 @@
       "target": 367.19057470703126,
       "risk": 12.71528247070313,
       "zone_type": "OB",
-      "days_held": 8,
+      "days_held": 12,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
     },
     {
-      "symbol": "TSM",
-      "direction": "long",
-      "entry_date": "2026-07-02",
-      "entry_price": 450.5400085449219,
-      "stop": 431.0883824157715,
-      "target": 489.44326080322264,
-      "risk": 19.451626129150384,
+      "symbol": "AVGO",
+      "direction": "short",
+      "entry_date": "2026-07-07",
+      "entry_price": 366.55499267578125,
+      "stop": 380.71966009521486,
+      "target": 338.225657836914,
+      "risk": 14.164667419433613,
       "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -178,6 +165,24 @@
       "displacement_present": false,
       "exit_date": "2026-07-06",
       "exit_price": 301.3622659606934,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
+    },
+    {
+      "symbol": "TSM",
+      "direction": "long",
+      "entry_date": "2026-07-02",
+      "entry_price": 450.5400085449219,
+      "stop": 431.0883824157715,
+      "target": 489.44326080322264,
+      "risk": 19.451626129150384,
+      "zone_type": "OB",
+      "days_held": 3,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-07",
+      "exit_price": 431.0883824157715,
       "exit_reason": "stop",
       "r_multiple": -1.0
     }
