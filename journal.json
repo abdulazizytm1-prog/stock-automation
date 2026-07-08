@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-07",
+    "scan_date": "2026-07-08",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,7 +28,20 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
+  "pending_confirmation": [
+    {
+      "symbol": "CVX",
+      "direction": "short",
+      "zone_top": 176.39999389648438,
+      "zone_bottom": 174.6999969482422,
+      "detected_date": "2026-07-08",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "open_positions": [
     {
       "symbol": "V",
@@ -39,21 +52,7 @@
       "target": 367.19057470703126,
       "risk": 12.71528247070313,
       "zone_type": "OB",
-      "days_held": 12,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "AVGO",
-      "direction": "short",
-      "entry_date": "2026-07-07",
-      "entry_price": 366.55499267578125,
-      "stop": 380.71966009521486,
-      "target": 338.225657836914,
-      "risk": 14.164667419433613,
-      "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 17,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -183,6 +182,24 @@
       "displacement_present": false,
       "exit_date": "2026-07-07",
       "exit_price": 431.0883824157715,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
+    },
+    {
+      "symbol": "AVGO",
+      "direction": "short",
+      "entry_date": "2026-07-07",
+      "entry_price": 366.55499267578125,
+      "stop": 380.71966009521486,
+      "target": 338.225657836914,
+      "risk": 14.164667419433613,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-08",
+      "exit_price": 380.71966009521486,
       "exit_reason": "stop",
       "r_multiple": -1.0
     }
