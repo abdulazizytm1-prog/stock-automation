@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-07-10
+**Date:** 2026-07-13
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -23,8 +23,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 3) AVGO
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 4) QCOM
 - No trade
@@ -35,8 +35,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 6) TSM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 7) LLY
 - No trade
@@ -59,8 +59,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 12) PG
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 13) KO
 - No trade
@@ -86,19 +86,20 @@
 
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
-- Tasdiqlangan (open position bo'ldi): 1
-- Yopilgan trade: 0
+- Tasdiqlangan (open position bo'ldi): 0
+- Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
+- Closed CVX: stop, R=-1.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 9
-- Win rate: 44.4%
-- Avg R: 0.25
-- Total R: 2.22
-- PF: 1.44
+- Jami trade: 10
+- Win rate: 40.0%
+- Avg R: 0.12
+- Total R: 1.22
+- PF: 1.20
 - Eng yaxshi tickerlar: HD (+2.00R), PG (+2.00R), V (+1.22R)
 - Eng yomon tickerlar: MRK (-1.00R), TSLA (-1.00R), AAPL (-1.00R)
 
@@ -107,7 +108,7 @@
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 9 | 44.4% | +2.22R | 1.44 |
+| C | 10 | 40.0% | +1.22R | 1.20 |
 
 ---
 
@@ -121,7 +122,7 @@
 
 # Edge Validation
 
-*(Based on 9 closed trade(s))*
+*(Based on 10 closed trade(s))*
 
 ## Grade Performance
 
@@ -129,7 +130,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 9 | 4 | 5 | 44.4% |
+| C | 10 | 4 | 6 | 40.0% |
 
 ## Symbol Performance
 
@@ -142,10 +143,10 @@ No symbol has reached the 3-trade minimum yet.
 | Outcome | Count |
 |---|---|
 | TARGET_HIT | 3 |
-| STOP_LOSS | 5 |
+| STOP_LOSS | 6 |
 | Other | 1 |
 
 ## Holding Statistics
 
-- Average Holding Days: 4.3
+- Average Holding Days: 4.2
 - Median Holding Days: 1.0

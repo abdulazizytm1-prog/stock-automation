@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-10",
+    "scan_date": "2026-07-13",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -31,20 +31,6 @@
   "pending_confirmation": [],
   "open_positions": [
     {
-      "symbol": "CVX",
-      "direction": "short",
-      "entry_date": "2026-07-09",
-      "entry_price": 174.6300048828125,
-      "stop": 176.9238839111328,
-      "target": 170.0422468261719,
-      "risk": 2.2938790283203048,
-      "zone_type": "OB",
-      "days_held": 1,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
       "symbol": "KO",
       "direction": "long",
       "entry_date": "2026-07-10",
@@ -53,7 +39,7 @@
       "target": 86.76639192199707,
       "risk": 2.018194282531738,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -221,6 +207,24 @@
       "exit_price": 357.25,
       "exit_reason": "time_stop",
       "r_multiple": 1.2182183345171438
+    },
+    {
+      "symbol": "CVX",
+      "direction": "short",
+      "entry_date": "2026-07-09",
+      "entry_price": 174.6300048828125,
+      "stop": 176.9238839111328,
+      "target": 170.0422468261719,
+      "risk": 2.2938790283203048,
+      "zone_type": "OB",
+      "days_held": 3,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-13",
+      "exit_price": 176.9238839111328,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
     }
   ]
 }
