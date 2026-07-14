@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-13",
+    "scan_date": "2026-07-14",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -39,7 +39,7 @@
       "target": 86.76639192199707,
       "risk": 2.018194282531738,
       "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 3,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
