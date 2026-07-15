@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-14",
+    "scan_date": "2026-07-15",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,7 +28,20 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
+  "pending_confirmation": [
+    {
+      "symbol": "LLY",
+      "direction": "long",
+      "zone_top": 1135.1400146484375,
+      "zone_bottom": 1100.97998046875,
+      "detected_date": "2026-07-15",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "open_positions": [
     {
       "symbol": "KO",
@@ -39,7 +52,7 @@
       "target": 86.76639192199707,
       "risk": 2.018194282531738,
       "zone_type": "OB",
-      "days_held": 3,
+      "days_held": 6,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
