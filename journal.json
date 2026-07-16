@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-15",
+    "scan_date": "2026-07-16",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,11 +30,23 @@
   },
   "pending_confirmation": [
     {
-      "symbol": "LLY",
+      "symbol": "AVGO",
       "direction": "long",
-      "zone_top": 1135.1400146484375,
-      "zone_bottom": 1100.97998046875,
-      "detected_date": "2026-07-15",
+      "zone_top": 374.0,
+      "zone_bottom": 356.42999267578125,
+      "detected_date": "2026-07-16",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "MRK",
+      "direction": "short",
+      "zone_top": 129.69000244140625,
+      "zone_bottom": 127.88999938964844,
+      "detected_date": "2026-07-16",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -52,7 +64,21 @@
       "target": 86.76639192199707,
       "risk": 2.018194282531738,
       "zone_type": "OB",
-      "days_held": 6,
+      "days_held": 10,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "LLY",
+      "direction": "long",
+      "entry_date": "2026-07-16",
+      "entry_price": 1162.27001953125,
+      "stop": 1097.4931704101562,
+      "target": 1291.8237177734377,
+      "risk": 64.77684912109385,
+      "zone_type": "OB",
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false

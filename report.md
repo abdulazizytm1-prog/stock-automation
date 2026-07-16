@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-07-15
+**Date:** 2026-07-16
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -12,9 +12,9 @@
 - Fetch errors: 0
 - Failure rate: 0.0%
 
-## Signals found: 1
+## Signals found: 2
 
-### 1) LLY
+### 1) AVGO
 - Setup: OB wick touch (Research Candidate)
 - Trend: Bullish
 - Reason: price returned to fresh bullish OB
@@ -26,37 +26,45 @@
 - Grade: C (discount=False, displacement=False)
 - Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
 
-### 2) AAPL
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+### 2) MRK
+- Setup: OB wick touch (Research Candidate)
+- Trend: Bearish
+- Reason: price returned to fresh bearish OB
+- Entry: next day open
+- SL: zone high +/- 0.3%
+- TP: 2R
+- Status: pending
+- Zone status: fresh -> touched
+- Grade: C (discount=False, displacement=False)
+- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
 
-### 3) NVDA
+### 3) AAPL
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 4) AVGO
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+### 4) NVDA
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 5) QCOM
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 6) AMD
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 7) TSM
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 8) JNJ
+### 8) LLY
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 9) MRK
-- No valid setup
-- Reason: trend filter failed (RANGE)
+### 9) JNJ
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 10) XOM
 - No trade
@@ -93,8 +101,8 @@
 ---
 
 ## Bugungi journal hodisalari
-- Yangi pending signal: 1
-- Tasdiqlangan (open position bo'ldi): 0
+- Yangi pending signal: 2
+- Tasdiqlangan (open position bo'ldi): 1
 - Yopilgan trade: 0
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
