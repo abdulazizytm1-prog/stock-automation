@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-07-16
+**Date:** 2026-07-17
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -14,7 +14,7 @@
 
 ## Signals found: 2
 
-### 1) AVGO
+### 1) AMD
 - Setup: OB wick touch (Research Candidate)
 - Trend: Bullish
 - Reason: price returned to fresh bullish OB
@@ -26,12 +26,12 @@
 - Grade: C (discount=False, displacement=False)
 - Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
 
-### 2) MRK
+### 2) MA
 - Setup: OB wick touch (Research Candidate)
-- Trend: Bearish
-- Reason: price returned to fresh bearish OB
+- Trend: Bullish
+- Reason: price returned to fresh bullish OB
 - Entry: next day open
-- SL: zone high +/- 0.3%
+- SL: zone low +/- 0.3%
 - TP: 2R
 - Status: pending
 - Zone status: fresh -> touched
@@ -43,14 +43,14 @@
 - Reason: trend filter failed (RANGE)
 
 ### 4) NVDA
-- No valid setup
-- Reason: trend filter failed (RANGE)
-
-### 5) QCOM
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 6) AMD
+### 5) AVGO
+- No valid setup
+- Reason: trend filter failed (RANGE)
+
+### 6) QCOM
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
@@ -59,38 +59,38 @@
 - Reason: trend filter failed (RANGE)
 
 ### 8) LLY
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 9) JNJ
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 10) XOM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 11) CVX
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 12) PG
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 13) KO
+### 10) MRK
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 11) XOM
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 12) CVX
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 13) PG
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 14) KO
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 14) HD
+### 15) HD
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 15) V
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 16) MA
+### 16) V
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
@@ -102,7 +102,7 @@
 
 ## Bugungi journal hodisalari
 - Yangi pending signal: 2
-- Tasdiqlangan (open position bo'ldi): 1
+- Tasdiqlangan (open position bo'ldi): 2
 - Yopilgan trade: 0
 - Rejected signal: 0
 - Intrabar ambiguity count: 0

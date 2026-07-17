@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-16",
+    "scan_date": "2026-07-17",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,11 +30,11 @@
   },
   "pending_confirmation": [
     {
-      "symbol": "AVGO",
+      "symbol": "AMD",
       "direction": "long",
-      "zone_top": 374.0,
-      "zone_bottom": 356.42999267578125,
-      "detected_date": "2026-07-16",
+      "zone_top": 477.45001220703125,
+      "zone_bottom": 448.3299865722656,
+      "detected_date": "2026-07-17",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -42,11 +42,11 @@
       "displacement_present": false
     },
     {
-      "symbol": "MRK",
-      "direction": "short",
-      "zone_top": 129.69000244140625,
-      "zone_bottom": 127.88999938964844,
-      "detected_date": "2026-07-16",
+      "symbol": "MA",
+      "direction": "long",
+      "zone_top": 541.239990234375,
+      "zone_bottom": 529.0800170898438,
+      "detected_date": "2026-07-17",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -64,7 +64,7 @@
       "target": 86.76639192199707,
       "risk": 2.018194282531738,
       "zone_type": "OB",
-      "days_held": 10,
+      "days_held": 15,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -77,6 +77,34 @@
       "stop": 1097.4931704101562,
       "target": 1291.8237177734377,
       "risk": 64.77684912109385,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "AVGO",
+      "direction": "long",
+      "entry_date": "2026-07-17",
+      "entry_price": 366.0450134277344,
+      "stop": 355.33185763549807,
+      "target": 387.471325012207,
+      "risk": 10.713155792236307,
+      "zone_type": "OB",
+      "days_held": 0,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "MRK",
+      "direction": "short",
+      "entry_date": "2026-07-17",
+      "entry_price": 128.4499969482422,
+      "stop": 130.07535243225098,
+      "target": 125.1992859802246,
+      "risk": 1.625355484008793,
       "zone_type": "OB",
       "days_held": 0,
       "setup_grade": "C",
