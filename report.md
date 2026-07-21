@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-07-20
+**Date:** 2026-07-21
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -15,28 +15,28 @@
 ## Signals found: 0
 
 ### 1) AAPL
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 2) NVDA
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 3) AVGO
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 4) QCOM
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 5) AMD
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 6) TSM
 - No valid setup
 - Reason: trend filter failed (RANGE)
+
+### 6) TSM
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 7) LLY
 - No trade
@@ -47,8 +47,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 9) MRK
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 10) XOM
 - No trade
@@ -59,16 +59,16 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 12) PG
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 13) KO
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
 ### 14) HD
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 15) V
 - No trade
@@ -86,30 +86,29 @@
 
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
-- Tasdiqlangan (open position bo'ldi): 2
-- Yopilgan trade: 2
+- Tasdiqlangan (open position bo'ldi): 0
+- Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed KO: time_stop, R=-0.58
-- Closed MRK: target, R=2.00
+- Closed AVGO: target, R=2.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 12
-- Win rate: 41.7%
-- Avg R: 0.22
-- Total R: 2.64
-- PF: 1.40
+- Jami trade: 13
+- Win rate: 46.2%
+- Avg R: 0.36
+- Total R: 4.64
+- PF: 1.70
 - Eng yaxshi tickerlar: HD (+2.00R), PG (+2.00R), V (+1.22R)
-- Eng yomon tickerlar: TSLA (-1.00R), AAPL (-1.00R), AVGO (-1.00R)
+- Eng yomon tickerlar: TSLA (-1.00R), AAPL (-1.00R), CVX (-1.00R)
 
 ### Grade Breakdown
 | Grade | n | Win Rate | Total R | PF |
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 12 | 41.7% | +2.64R | 1.40 |
+| C | 13 | 46.2% | +4.64R | 1.70 |
 
 ---
 
@@ -123,7 +122,7 @@
 
 # Edge Validation
 
-*(Based on 12 closed trade(s))*
+*(Based on 13 closed trade(s))*
 
 ## Grade Performance
 
@@ -131,7 +130,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 12 | 5 | 7 | 41.7% |
+| C | 13 | 6 | 7 | 46.2% |
 
 ## Symbol Performance
 
@@ -143,11 +142,11 @@ No symbol has reached the 3-trade minimum yet.
 
 | Outcome | Count |
 |---|---|
-| TARGET_HIT | 4 |
+| TARGET_HIT | 5 |
 | STOP_LOSS | 6 |
 | Other | 2 |
 
 ## Holding Statistics
 
-- Average Holding Days: 5.2
+- Average Holding Days: 5.1
 - Median Holding Days: 1.0

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-20",
+    "scan_date": "2026-07-21",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -39,21 +39,7 @@
       "target": 1291.8237177734377,
       "risk": 64.77684912109385,
       "zone_type": "OB",
-      "days_held": 3,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "AVGO",
-      "direction": "long",
-      "entry_date": "2026-07-17",
-      "entry_price": 366.0450134277344,
-      "stop": 355.33185763549807,
-      "target": 387.471325012207,
-      "risk": 10.713155792236307,
-      "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 6,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -67,7 +53,7 @@
       "target": 657.4269821777344,
       "risk": 70.21599353027347,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -81,7 +67,7 @@
       "target": 565.0799658203125,
       "risk": 12.539982910156255,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -301,6 +287,24 @@
       "displacement_present": false,
       "exit_date": "2026-07-20",
       "exit_price": 125.1992859802246,
+      "exit_reason": "target",
+      "r_multiple": 2.0
+    },
+    {
+      "symbol": "AVGO",
+      "direction": "long",
+      "entry_date": "2026-07-17",
+      "entry_price": 366.0450134277344,
+      "stop": 355.33185763549807,
+      "target": 387.471325012207,
+      "risk": 10.713155792236307,
+      "zone_type": "OB",
+      "days_held": 3,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-21",
+      "exit_price": 387.471325012207,
       "exit_reason": "target",
       "r_multiple": 2.0
     }
