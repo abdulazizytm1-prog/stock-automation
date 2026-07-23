@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-22",
+    "scan_date": "2026-07-23",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,7 +28,20 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
+  "pending_confirmation": [
+    {
+      "symbol": "V",
+      "direction": "long",
+      "zone_top": 351.1700134277344,
+      "zone_bottom": 345.3299865722656,
+      "detected_date": "2026-07-23",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "open_positions": [
     {
       "symbol": "LLY",
@@ -39,7 +52,7 @@
       "target": 1291.8237177734377,
       "risk": 64.77684912109385,
       "zone_type": "OB",
-      "days_held": 10,
+      "days_held": 15,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -53,21 +66,7 @@
       "target": 657.4269821777344,
       "risk": 70.21599353027347,
       "zone_type": "OB",
-      "days_held": 3,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "MA",
-      "direction": "long",
-      "entry_date": "2026-07-20",
-      "entry_price": 540.0,
-      "stop": 527.4600170898437,
-      "target": 565.0799658203125,
-      "risk": 12.539982910156255,
-      "zone_type": "OB",
-      "days_held": 3,
+      "days_held": 6,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -307,6 +306,24 @@
       "exit_price": 387.471325012207,
       "exit_reason": "target",
       "r_multiple": 2.0
+    },
+    {
+      "symbol": "MA",
+      "direction": "long",
+      "entry_date": "2026-07-20",
+      "entry_price": 540.0,
+      "stop": 527.4600170898437,
+      "target": 565.0799658203125,
+      "risk": 12.539982910156255,
+      "zone_type": "OB",
+      "days_held": 6,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-23",
+      "exit_price": 527.4600170898437,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
     }
   ]
 }
