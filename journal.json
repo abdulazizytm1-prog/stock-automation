@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-23",
+    "scan_date": "2026-07-24",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,35 +28,8 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [
-    {
-      "symbol": "V",
-      "direction": "long",
-      "zone_top": 351.1700134277344,
-      "zone_bottom": 345.3299865722656,
-      "detected_date": "2026-07-23",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    }
-  ],
+  "pending_confirmation": [],
   "open_positions": [
-    {
-      "symbol": "LLY",
-      "direction": "long",
-      "entry_date": "2026-07-16",
-      "entry_price": 1162.27001953125,
-      "stop": 1097.4931704101562,
-      "target": 1291.8237177734377,
-      "risk": 64.77684912109385,
-      "zone_type": "OB",
-      "days_held": 15,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
     {
       "symbol": "AMD",
       "direction": "long",
@@ -66,7 +39,21 @@
       "target": 657.4269821777344,
       "risk": 70.21599353027347,
       "zone_type": "OB",
-      "days_held": 6,
+      "days_held": 10,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "V",
+      "direction": "long",
+      "entry_date": "2026-07-24",
+      "entry_price": 353.4700012207031,
+      "stop": 344.2695765686035,
+      "target": 371.8708505249024,
+      "risk": 9.200424652099628,
+      "zone_type": "OB",
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -324,6 +311,24 @@
       "exit_price": 527.4600170898437,
       "exit_reason": "stop",
       "r_multiple": -1.0
+    },
+    {
+      "symbol": "LLY",
+      "direction": "long",
+      "entry_date": "2026-07-16",
+      "entry_price": 1162.27001953125,
+      "stop": 1097.4931704101562,
+      "target": 1291.8237177734377,
+      "risk": 64.77684912109385,
+      "zone_type": "OB",
+      "days_held": 20,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-23",
+      "exit_price": 1185.8699951171875,
+      "exit_reason": "time_stop",
+      "r_multiple": 0.36432731610362373
     }
   ]
 }
