@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-24",
+    "scan_date": "2026-07-27",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,7 +28,20 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
+  "pending_confirmation": [
+    {
+      "symbol": "HD",
+      "direction": "short",
+      "zone_top": 350.80999755859375,
+      "zone_bottom": 340.6400146484375,
+      "detected_date": "2026-07-27",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "open_positions": [
     {
       "symbol": "AMD",
@@ -39,7 +52,7 @@
       "target": 657.4269821777344,
       "risk": 70.21599353027347,
       "zone_type": "OB",
-      "days_held": 10,
+      "days_held": 15,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -53,7 +66,7 @@
       "target": 371.8708505249024,
       "risk": 9.200424652099628,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
