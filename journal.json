@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-27",
+    "scan_date": "2026-07-28",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,11 +30,11 @@
   },
   "pending_confirmation": [
     {
-      "symbol": "HD",
-      "direction": "short",
-      "zone_top": 350.80999755859375,
-      "zone_bottom": 340.6400146484375,
-      "detected_date": "2026-07-27",
+      "symbol": "CVX",
+      "direction": "long",
+      "zone_top": 188.14999389648438,
+      "zone_bottom": 185.5,
+      "detected_date": "2026-07-28",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -44,20 +44,6 @@
   ],
   "open_positions": [
     {
-      "symbol": "AMD",
-      "direction": "long",
-      "entry_date": "2026-07-20",
-      "entry_price": 516.9949951171875,
-      "stop": 446.77900158691403,
-      "target": 657.4269821777344,
-      "risk": 70.21599353027347,
-      "zone_type": "OB",
-      "days_held": 15,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
       "symbol": "V",
       "direction": "long",
       "entry_date": "2026-07-24",
@@ -66,7 +52,21 @@
       "target": 371.8708505249024,
       "risk": 9.200424652099628,
       "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 3,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "HD",
+      "direction": "short",
+      "entry_date": "2026-07-28",
+      "entry_price": 342.6400146484375,
+      "stop": 351.83791760253905,
+      "target": 324.2442087402344,
+      "risk": 9.19790295410155,
+      "zone_type": "OB",
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -342,6 +342,24 @@
       "exit_price": 1185.8699951171875,
       "exit_reason": "time_stop",
       "r_multiple": 0.36432731610362373
+    },
+    {
+      "symbol": "AMD",
+      "direction": "long",
+      "entry_date": "2026-07-20",
+      "entry_price": 516.9949951171875,
+      "stop": 446.77900158691403,
+      "target": 657.4269821777344,
+      "risk": 70.21599353027347,
+      "zone_type": "OB",
+      "days_held": 20,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-27",
+      "exit_price": 494.95001220703125,
+      "exit_reason": "time_stop",
+      "r_multiple": -0.31395956678518844
     }
   ]
 }
