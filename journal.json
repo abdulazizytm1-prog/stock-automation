@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-28",
+    "scan_date": "2026-07-29",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,11 +30,11 @@
   },
   "pending_confirmation": [
     {
-      "symbol": "CVX",
+      "symbol": "MRK",
       "direction": "long",
-      "zone_top": 188.14999389648438,
-      "zone_bottom": 185.5,
-      "detected_date": "2026-07-28",
+      "zone_top": 132.52999877929688,
+      "zone_bottom": 130.4499969482422,
+      "detected_date": "2026-07-29",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -44,20 +44,6 @@
   ],
   "open_positions": [
     {
-      "symbol": "V",
-      "direction": "long",
-      "entry_date": "2026-07-24",
-      "entry_price": 353.4700012207031,
-      "stop": 344.2695765686035,
-      "target": 371.8708505249024,
-      "risk": 9.200424652099628,
-      "zone_type": "OB",
-      "days_held": 3,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
       "symbol": "HD",
       "direction": "short",
       "entry_date": "2026-07-28",
@@ -65,6 +51,20 @@
       "stop": 351.83791760253905,
       "target": 324.2442087402344,
       "risk": 9.19790295410155,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "CVX",
+      "direction": "long",
+      "entry_date": "2026-07-29",
+      "entry_price": 192.5,
+      "stop": 184.9225,
+      "target": 207.65499999999997,
+      "risk": 7.577499999999986,
       "zone_type": "OB",
       "days_held": 0,
       "setup_grade": "C",
@@ -360,6 +360,24 @@
       "exit_price": 494.95001220703125,
       "exit_reason": "time_stop",
       "r_multiple": -0.31395956678518844
+    },
+    {
+      "symbol": "V",
+      "direction": "long",
+      "entry_date": "2026-07-24",
+      "entry_price": 353.4700012207031,
+      "stop": 344.2695765686035,
+      "target": 371.8708505249024,
+      "risk": 9.200424652099628,
+      "zone_type": "OB",
+      "days_held": 6,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-07-29",
+      "exit_price": 371.8708505249024,
+      "exit_reason": "target",
+      "r_multiple": 2.0
     }
   ]
 }

@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-07-28
+**Date:** 2026-07-29
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -14,7 +14,7 @@
 
 ## Signals found: 1
 
-### 1) CVX
+### 1) MRK
 - Setup: OB wick touch (Research Candidate)
 - Trend: Bullish
 - Reason: price returned to fresh bullish OB
@@ -58,11 +58,11 @@
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 10) MRK
+### 10) XOM
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 11) XOM
+### 11) CVX
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
@@ -98,17 +98,17 @@
 - Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed AMD: time_stop, R=-0.31
+- Closed V: target, R=2.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 16
-- Win rate: 43.8%
-- Avg R: 0.23
-- Total R: 3.69
-- PF: 1.47
-- Eng yaxshi tickerlar: HD (+2.00R), PG (+2.00R), V (+1.22R)
+- Jami trade: 17
+- Win rate: 47.1%
+- Avg R: 0.33
+- Total R: 5.69
+- PF: 1.72
+- Eng yaxshi tickerlar: V (+3.22R), HD (+2.00R), PG (+2.00R)
 - Eng yomon tickerlar: TSLA (-1.00R), AAPL (-1.00R), CVX (-1.00R)
 
 ### Grade Breakdown
@@ -116,7 +116,7 @@
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 16 | 43.8% | +3.69R | 1.47 |
+| C | 17 | 47.1% | +5.69R | 1.72 |
 
 ---
 
@@ -130,7 +130,7 @@
 
 # Edge Validation
 
-*(Based on 16 closed trade(s))*
+*(Based on 17 closed trade(s))*
 
 ## Grade Performance
 
@@ -138,7 +138,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 16 | 7 | 9 | 43.8% |
+| C | 17 | 8 | 9 | 47.1% |
 
 ## Symbol Performance
 
@@ -150,11 +150,11 @@ No symbol has reached the 3-trade minimum yet.
 
 | Outcome | Count |
 |---|---|
-| TARGET_HIT | 5 |
+| TARGET_HIT | 6 |
 | STOP_LOSS | 7 |
 | Other | 4 |
 
 ## Holding Statistics
 
-- Average Holding Days: 7.0
+- Average Holding Days: 6.9
 - Median Holding Days: 3.0
