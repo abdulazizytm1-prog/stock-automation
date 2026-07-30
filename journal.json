@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-29",
+    "scan_date": "2026-07-30",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,11 +30,35 @@
   },
   "pending_confirmation": [
     {
+      "symbol": "TSM",
+      "direction": "short",
+      "zone_top": 395.3599853515625,
+      "zone_bottom": 381.29998779296875,
+      "detected_date": "2026-07-30",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "LLY",
+      "direction": "long",
+      "zone_top": 1175.0,
+      "zone_bottom": 1153.5,
+      "detected_date": "2026-07-30",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
       "symbol": "MRK",
       "direction": "long",
-      "zone_top": 132.52999877929688,
-      "zone_bottom": 130.4499969482422,
-      "detected_date": "2026-07-29",
+      "zone_top": 127.88999938964844,
+      "zone_bottom": 124.22000122070312,
+      "detected_date": "2026-07-30",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -52,7 +76,7 @@
       "target": 324.2442087402344,
       "risk": 9.19790295410155,
       "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 3,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -66,7 +90,7 @@
       "target": 207.65499999999997,
       "risk": 7.577499999999986,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
