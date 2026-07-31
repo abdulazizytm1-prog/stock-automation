@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-07-30
+**Date:** 2026-07-31
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -12,21 +12,9 @@
 - Fetch errors: 0
 - Failure rate: 0.0%
 
-## Signals found: 3
+## Signals found: 1
 
-### 1) TSM
-- Setup: OB wick touch (Research Candidate)
-- Trend: Bearish
-- Reason: price returned to fresh bearish OB
-- Entry: next day open
-- SL: zone high +/- 0.3%
-- TP: 2R
-- Status: pending
-- Zone status: fresh -> touched
-- Grade: C (discount=False, displacement=False)
-- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
-
-### 2) LLY
+### 1) AAPL
 - Setup: OB wick touch (Research Candidate)
 - Trend: Bullish
 - Reason: price returned to fresh bullish OB
@@ -38,41 +26,37 @@
 - Grade: C (discount=False, displacement=False)
 - Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
 
-### 3) MRK
-- Setup: OB wick touch (Research Candidate)
-- Trend: Bullish
-- Reason: price returned to fresh bullish OB
-- Entry: next day open
-- SL: zone low +/- 0.3%
-- TP: 2R
-- Status: pending
-- Zone status: fresh -> touched
-- Grade: C (discount=False, displacement=False)
-- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
-
-### 4) AAPL
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 5) NVDA
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 6) AVGO
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 7) QCOM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 8) AMD
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 9) JNJ
+### 2) NVDA
 - No valid setup
 - Reason: trend filter failed (RANGE)
+
+### 3) AVGO
+- No valid setup
+- Reason: trend filter failed (RANGE)
+
+### 4) QCOM
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 5) AMD
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 6) TSM
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 7) LLY
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 8) JNJ
+- No valid setup
+- Reason: trend filter failed (RANGE)
+
+### 9) MRK
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 10) XOM
 - No trade
@@ -83,20 +67,20 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 12) PG
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 13) KO
 - No valid setup
 - Reason: trend filter failed (RANGE)
+
+### 13) KO
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 14) HD
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 15) V
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 16) MA
 - No valid setup
@@ -109,12 +93,13 @@
 ---
 
 ## Bugungi journal hodisalari
-- Yangi pending signal: 3
-- Tasdiqlangan (open position bo'ldi): 0
+- Yangi pending signal: 1
+- Tasdiqlangan (open position bo'ldi): 1
 - Yopilgan trade: 0
-- Rejected signal: 1
+- Rejected signal: 2
 - Intrabar ambiguity count: 0
-- Rejected MRK: invalid_risk (2026-07-30)
+- Rejected TSM: invalid_risk (2026-07-31)
+- Rejected LLY: invalid_risk (2026-07-31)
 
 ---
 
