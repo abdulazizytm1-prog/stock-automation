@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-07-31
+**Date:** 2026-08-03
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -12,19 +12,11 @@
 - Fetch errors: 0
 - Failure rate: 0.0%
 
-## Signals found: 1
+## Signals found: 0
 
 ### 1) AAPL
-- Setup: OB wick touch (Research Candidate)
-- Trend: Bullish
-- Reason: price returned to fresh bullish OB
-- Entry: next day open
-- SL: zone low +/- 0.3%
-- TP: 2R
-- Status: pending
-- Zone status: fresh -> touched
-- Grade: C (discount=False, displacement=False)
-- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 2) NVDA
 - No valid setup
@@ -93,13 +85,11 @@
 ---
 
 ## Bugungi journal hodisalari
-- Yangi pending signal: 1
+- Yangi pending signal: 0
 - Tasdiqlangan (open position bo'ldi): 1
 - Yopilgan trade: 0
-- Rejected signal: 2
+- Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Rejected TSM: invalid_risk (2026-07-31)
-- Rejected LLY: invalid_risk (2026-07-31)
 
 ---
 

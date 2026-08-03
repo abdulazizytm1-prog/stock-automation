@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-07-31",
+    "scan_date": "2026-08-03",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,20 +28,7 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [
-    {
-      "symbol": "AAPL",
-      "direction": "long",
-      "zone_top": 315.4800109863281,
-      "zone_bottom": 310.1499938964844,
-      "detected_date": "2026-07-31",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    }
-  ],
+  "pending_confirmation": [],
   "open_positions": [
     {
       "symbol": "HD",
@@ -52,7 +39,7 @@
       "target": 324.2442087402344,
       "risk": 9.19790295410155,
       "zone_type": "OB",
-      "days_held": 6,
+      "days_held": 10,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -66,7 +53,7 @@
       "target": 207.65499999999997,
       "risk": 7.577499999999986,
       "zone_type": "OB",
-      "days_held": 3,
+      "days_held": 6,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -79,6 +66,20 @@
       "stop": 123.8332412261963,
       "target": 139.09351205444335,
       "risk": 5.08675694274902,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "AAPL",
+      "direction": "long",
+      "entry_date": "2026-08-03",
+      "entry_price": 309.6700134277344,
+      "stop": 309.22098385620114,
+      "target": 310.56807257080084,
+      "risk": 0.44902957153323086,
       "zone_type": "OB",
       "days_held": 0,
       "setup_grade": "C",
