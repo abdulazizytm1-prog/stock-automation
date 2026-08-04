@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-03",
+    "scan_date": "2026-08-04",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,7 +28,32 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
+  "pending_confirmation": [
+    {
+      "symbol": "AMD",
+      "direction": "short",
+      "zone_top": 561.469970703125,
+      "zone_bottom": 526.5999755859375,
+      "detected_date": "2026-08-04",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "XOM",
+      "direction": "long",
+      "zone_top": 150.0,
+      "zone_bottom": 147.1699981689453,
+      "detected_date": "2026-08-04",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "open_positions": [
     {
       "symbol": "HD",
@@ -39,7 +64,7 @@
       "target": 324.2442087402344,
       "risk": 9.19790295410155,
       "zone_type": "OB",
-      "days_held": 10,
+      "days_held": 15,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -53,7 +78,7 @@
       "target": 207.65499999999997,
       "risk": 7.577499999999986,
       "zone_type": "OB",
-      "days_held": 6,
+      "days_held": 10,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -67,21 +92,7 @@
       "target": 139.09351205444335,
       "risk": 5.08675694274902,
       "zone_type": "OB",
-      "days_held": 1,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "AAPL",
-      "direction": "long",
-      "entry_date": "2026-08-03",
-      "entry_price": 309.6700134277344,
-      "stop": 309.22098385620114,
-      "target": 310.56807257080084,
-      "risk": 0.44902957153323086,
-      "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 3,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -393,6 +404,24 @@
       "exit_price": 371.8708505249024,
       "exit_reason": "target",
       "r_multiple": 2.0
+    },
+    {
+      "symbol": "AAPL",
+      "direction": "long",
+      "entry_date": "2026-08-03",
+      "entry_price": 309.6700134277344,
+      "stop": 309.22098385620114,
+      "target": 310.56807257080084,
+      "risk": 0.44902957153323086,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-08-04",
+      "exit_price": 309.22098385620114,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
     }
   ]
 }

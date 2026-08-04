@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-03
+**Date:** 2026-08-04
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -12,51 +12,67 @@
 - Fetch errors: 0
 - Failure rate: 0.0%
 
-## Signals found: 0
+## Signals found: 2
 
-### 1) AAPL
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+### 1) AMD
+- Setup: OB wick touch (Research Candidate)
+- Trend: Bearish
+- Reason: price returned to fresh bearish OB
+- Entry: next day open
+- SL: zone high +/- 0.3%
+- TP: 2R
+- Status: pending
+- Zone status: fresh -> touched
+- Grade: C (discount=False, displacement=False)
+- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
 
-### 2) NVDA
+### 2) XOM
+- Setup: OB wick touch (Research Candidate)
+- Trend: Bullish
+- Reason: price returned to fresh bullish OB
+- Entry: next day open
+- SL: zone low +/- 0.3%
+- TP: 2R
+- Status: pending
+- Zone status: fresh -> touched
+- Grade: C (discount=False, displacement=False)
+- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
+
+### 3) AAPL
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 3) AVGO
+### 4) NVDA
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 4) QCOM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 5) AMD
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 6) TSM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 7) LLY
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
-
-### 8) JNJ
+### 5) AVGO
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 9) MRK
+### 6) QCOM
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 10) XOM
+### 7) TSM
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 8) LLY
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 9) JNJ
+- No valid setup
+- Reason: trend filter failed (RANGE)
+
+### 10) MRK
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 11) CVX
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 12) PG
 - No valid setup
@@ -67,8 +83,8 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 14) HD
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 15) V
 - No trade
@@ -85,29 +101,30 @@
 ---
 
 ## Bugungi journal hodisalari
-- Yangi pending signal: 0
-- Tasdiqlangan (open position bo'ldi): 1
-- Yopilgan trade: 0
+- Yangi pending signal: 2
+- Tasdiqlangan (open position bo'ldi): 0
+- Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
+- Closed AAPL: stop, R=-1.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 17
-- Win rate: 47.1%
-- Avg R: 0.33
-- Total R: 5.69
-- PF: 1.72
+- Jami trade: 18
+- Win rate: 44.4%
+- Avg R: 0.26
+- Total R: 4.69
+- PF: 1.53
 - Eng yaxshi tickerlar: V (+3.22R), HD (+2.00R), PG (+2.00R)
-- Eng yomon tickerlar: TSLA (-1.00R), AAPL (-1.00R), CVX (-1.00R)
+- Eng yomon tickerlar: AAPL (-2.00R), TSLA (-1.00R), CVX (-1.00R)
 
 ### Grade Breakdown
 | Grade | n | Win Rate | Total R | PF |
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 17 | 47.1% | +5.69R | 1.72 |
+| C | 18 | 44.4% | +4.69R | 1.53 |
 
 ---
 
@@ -121,7 +138,7 @@
 
 # Edge Validation
 
-*(Based on 17 closed trade(s))*
+*(Based on 18 closed trade(s))*
 
 ## Grade Performance
 
@@ -129,7 +146,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 17 | 8 | 9 | 47.1% |
+| C | 18 | 8 | 10 | 44.4% |
 
 ## Symbol Performance
 
@@ -142,10 +159,10 @@ No symbol has reached the 3-trade minimum yet.
 | Outcome | Count |
 |---|---|
 | TARGET_HIT | 6 |
-| STOP_LOSS | 7 |
+| STOP_LOSS | 8 |
 | Other | 4 |
 
 ## Holding Statistics
 
-- Average Holding Days: 6.9
+- Average Holding Days: 6.6
 - Median Holding Days: 3.0
