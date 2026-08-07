@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-05",
+    "scan_date": "2026-08-06",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -22,7 +22,7 @@
       "MA",
       "TSLA"
     ],
-    "market_data_status": "fresh",
+    "market_data_status": "no fresh market data / market holiday",
     "total_symbols": 17,
     "fetch_success_count": 17,
     "fetch_error_count": 0,
@@ -30,20 +30,6 @@
   },
   "pending_confirmation": [],
   "open_positions": [
-    {
-      "symbol": "CVX",
-      "direction": "long",
-      "entry_date": "2026-07-29",
-      "entry_price": 192.5,
-      "stop": 184.9225,
-      "target": 207.65499999999997,
-      "risk": 7.577499999999986,
-      "zone_type": "OB",
-      "days_held": 15,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
     {
       "symbol": "MRK",
       "direction": "long",
@@ -53,7 +39,7 @@
       "target": 139.09351205444335,
       "risk": 5.08675694274902,
       "zone_type": "OB",
-      "days_held": 6,
+      "days_held": 10,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -67,7 +53,7 @@
       "target": 327.63807397460937,
       "risk": 78.42846057128907,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -81,7 +67,7 @@
       "target": 171.69522467041014,
       "risk": 8.330110504150383,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -429,6 +415,24 @@
       "exit_price": 348.239990234375,
       "exit_reason": "time_stop",
       "r_multiple": -0.6088317754472877
+    },
+    {
+      "symbol": "CVX",
+      "direction": "long",
+      "entry_date": "2026-07-29",
+      "entry_price": 192.5,
+      "stop": 184.9225,
+      "target": 207.65499999999997,
+      "risk": 7.577499999999986,
+      "zone_type": "OB",
+      "days_held": 20,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-08-05",
+      "exit_price": 186.41000366210938,
+      "exit_reason": "time_stop",
+      "r_multiple": -0.8036946668281935
     }
   ]
 }
