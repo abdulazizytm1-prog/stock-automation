@@ -1,42 +1,50 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-06
+**Date:** 2026-08-07
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
 - Halal filter mode: static_watchlist
 - Scanner version: 2026.06.20
-- Market data status: no fresh market data / market holiday
+- Market data status: fresh
 - Final scanned watchlist: AAPL, NVDA, AVGO, QCOM, AMD, TSM, LLY, JNJ, MRK, XOM, CVX, PG, KO, HD, V, MA, TSLA
 - Fetch success: 17/17
 - Fetch errors: 0
 - Failure rate: 0.0%
 
-## Signals found: 0
+## Signals found: 1
 
-### 1) AAPL
+### 1) QCOM
+- Setup: OB wick touch (Research Candidate)
+- Trend: Bearish
+- Reason: price returned to fresh bearish OB
+- Entry: next day open
+- SL: zone high +/- 0.3%
+- TP: 2R
+- Status: pending
+- Zone status: fresh -> touched
+- Grade: C (discount=False, displacement=False)
+- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
+
+### 2) AAPL
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 2) NVDA
+### 3) NVDA
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 3) AVGO
+### 4) AVGO
 - No valid setup
 - Reason: trend filter failed (RANGE)
-
-### 4) QCOM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 5) AMD
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
 ### 6) TSM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 7) LLY
 - No valid setup
@@ -71,8 +79,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 15) V
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 16) MA
 - No valid setup
@@ -85,12 +93,11 @@
 ---
 
 ## Bugungi journal hodisalari
-- Yangi pending signal: 0
+- Yangi pending signal: 1
 - Tasdiqlangan (open position bo'ldi): 0
-- Yopilgan trade: 1
+- Yopilgan trade: 0
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed CVX: time_stop, R=-0.80
 
 ---
 

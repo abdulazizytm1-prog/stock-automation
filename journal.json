@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-06",
+    "scan_date": "2026-08-07",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -22,13 +22,26 @@
       "MA",
       "TSLA"
     ],
-    "market_data_status": "no fresh market data / market holiday",
+    "market_data_status": "fresh",
     "total_symbols": 17,
     "fetch_success_count": 17,
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
+  "pending_confirmation": [
+    {
+      "symbol": "QCOM",
+      "direction": "short",
+      "zone_top": 171.19000244140625,
+      "zone_bottom": 165.2899932861328,
+      "detected_date": "2026-08-07",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "open_positions": [
     {
       "symbol": "MRK",
@@ -39,7 +52,7 @@
       "target": 139.09351205444335,
       "risk": 5.08675694274902,
       "zone_type": "OB",
-      "days_held": 10,
+      "days_held": 15,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -53,7 +66,7 @@
       "target": 327.63807397460937,
       "risk": 78.42846057128907,
       "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 3,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -67,7 +80,7 @@
       "target": 171.69522467041014,
       "risk": 8.330110504150383,
       "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 3,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
