@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-07
+**Date:** 2026-08-10
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -12,29 +12,21 @@
 - Fetch errors: 0
 - Failure rate: 0.0%
 
-## Signals found: 1
+## Signals found: 0
 
-### 1) QCOM
-- Setup: OB wick touch (Research Candidate)
-- Trend: Bearish
-- Reason: price returned to fresh bearish OB
-- Entry: next day open
-- SL: zone high +/- 0.3%
-- TP: 2R
-- Status: pending
-- Zone status: fresh -> touched
-- Grade: C (discount=False, displacement=False)
-- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
+### 1) AAPL
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 2) AAPL
+### 2) NVDA
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 3) NVDA
+### 3) AVGO
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 4) AVGO
+### 4) QCOM
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
@@ -43,16 +35,16 @@
 - Reason: trend filter failed (RANGE)
 
 ### 6) TSM
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 7) LLY
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
 ### 8) JNJ
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 9) MRK
 - No valid setup
@@ -67,12 +59,12 @@
 - Reason: trend filter failed (RANGE)
 
 ### 12) PG
-- No valid setup
-- Reason: trend filter failed (RANGE)
-
-### 13) KO
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 13) KO
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 14) HD
 - No valid setup
@@ -87,26 +79,27 @@
 - Reason: trend filter failed (RANGE)
 
 ### 17) TSLA
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ---
 
 ## Bugungi journal hodisalari
-- Yangi pending signal: 1
-- Tasdiqlangan (open position bo'ldi): 0
-- Yopilgan trade: 0
+- Yangi pending signal: 0
+- Tasdiqlangan (open position bo'ldi): 1
+- Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
+- Closed MRK: time_stop, R=-0.07
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 20
-- Win rate: 40.0%
-- Avg R: 0.16
-- Total R: 3.28
-- PF: 1.32
+- Jami trade: 21
+- Win rate: 38.1%
+- Avg R: 0.15
+- Total R: 3.21
+- PF: 1.31
 - Eng yaxshi tickerlar: V (+3.22R), PG (+2.00R), HD (+1.39R)
 - Eng yomon tickerlar: AAPL (-2.00R), CVX (-1.80R), TSLA (-1.00R)
 
@@ -115,7 +108,7 @@
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 20 | 40.0% | +3.28R | 1.32 |
+| C | 21 | 38.1% | +3.21R | 1.31 |
 
 ---
 
@@ -129,7 +122,7 @@
 
 # Edge Validation
 
-*(Based on 20 closed trade(s))*
+*(Based on 21 closed trade(s))*
 
 ## Grade Performance
 
@@ -137,13 +130,15 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 20 | 8 | 12 | 40.0% |
+| C | 21 | 8 | 13 | 38.1% |
 
 ## Symbol Performance
 
 *Only symbols with ≥3 completed trades*
 
-No symbol has reached the 3-trade minimum yet.
+| Ticker | Trades | Win Rate |
+|---|---|---|
+| MRK | 3 | 33.3% |
 
 ## Outcome Distribution
 
@@ -151,9 +146,9 @@ No symbol has reached the 3-trade minimum yet.
 |---|---|
 | TARGET_HIT | 6 |
 | STOP_LOSS | 8 |
-| Other | 6 |
+| Other | 7 |
 
 ## Holding Statistics
 
-- Average Holding Days: 8.0
+- Average Holding Days: 8.5
 - Median Holding Days: 3.0
