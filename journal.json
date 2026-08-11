@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-10",
+    "scan_date": "2026-08-11",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -39,7 +39,7 @@
       "target": 327.63807397460937,
       "risk": 78.42846057128907,
       "zone_type": "OB",
-      "days_held": 6,
+      "days_held": 10,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -53,21 +53,7 @@
       "target": 171.69522467041014,
       "risk": 8.330110504150383,
       "zone_type": "OB",
-      "days_held": 6,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "QCOM",
-      "direction": "short",
-      "entry_date": "2026-08-10",
-      "entry_price": 168.52499389648438,
-      "stop": 171.6955774230957,
-      "target": 162.18382684326173,
-      "risk": 3.170583526611324,
-      "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 10,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -451,6 +437,24 @@
       "exit_price": 128.5800018310547,
       "exit_reason": "time_stop",
       "r_multiple": -0.06683950928209317
+    },
+    {
+      "symbol": "QCOM",
+      "direction": "short",
+      "entry_date": "2026-08-10",
+      "entry_price": 168.52499389648438,
+      "stop": 171.6955774230957,
+      "target": 162.18382684326173,
+      "risk": 3.170583526611324,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-08-11",
+      "exit_price": 162.18382684326173,
+      "exit_reason": "target",
+      "r_multiple": 2.0
     }
   ]
 }

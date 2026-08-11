@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-10
+**Date:** 2026-08-11
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -55,12 +55,12 @@
 - Reason: trend filter failed (RANGE)
 
 ### 11) CVX
-- No valid setup
-- Reason: trend filter failed (RANGE)
-
-### 12) PG
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 12) PG
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 13) KO
 - No valid setup
@@ -86,21 +86,21 @@
 
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
-- Tasdiqlangan (open position bo'ldi): 1
+- Tasdiqlangan (open position bo'ldi): 0
 - Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed MRK: time_stop, R=-0.07
+- Closed QCOM: target, R=2.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 21
-- Win rate: 38.1%
-- Avg R: 0.15
-- Total R: 3.21
-- PF: 1.31
-- Eng yaxshi tickerlar: V (+3.22R), PG (+2.00R), HD (+1.39R)
+- Jami trade: 22
+- Win rate: 40.9%
+- Avg R: 0.24
+- Total R: 5.21
+- PF: 1.50
+- Eng yaxshi tickerlar: V (+3.22R), PG (+2.00R), QCOM (+2.00R)
 - Eng yomon tickerlar: AAPL (-2.00R), CVX (-1.80R), TSLA (-1.00R)
 
 ### Grade Breakdown
@@ -108,7 +108,7 @@
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 21 | 38.1% | +3.21R | 1.31 |
+| C | 22 | 40.9% | +5.21R | 1.50 |
 
 ---
 
@@ -122,7 +122,7 @@
 
 # Edge Validation
 
-*(Based on 21 closed trade(s))*
+*(Based on 22 closed trade(s))*
 
 ## Grade Performance
 
@@ -130,7 +130,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 21 | 8 | 13 | 38.1% |
+| C | 22 | 9 | 13 | 40.9% |
 
 ## Symbol Performance
 
@@ -144,11 +144,11 @@
 
 | Outcome | Count |
 |---|---|
-| TARGET_HIT | 6 |
+| TARGET_HIT | 7 |
 | STOP_LOSS | 8 |
 | Other | 7 |
 
 ## Holding Statistics
 
-- Average Holding Days: 8.5
+- Average Holding Days: 8.2
 - Median Holding Days: 3.0
