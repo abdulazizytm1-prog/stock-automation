@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-11
+**Date:** 2026-08-12
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -23,12 +23,12 @@
 - Reason: trend filter failed (RANGE)
 
 ### 3) AVGO
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 4) QCOM
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 5) AMD
 - No valid setup
@@ -71,8 +71,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 15) V
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 16) MA
 - No valid setup
@@ -87,10 +87,9 @@
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
 - Tasdiqlangan (open position bo'ldi): 0
-- Yopilgan trade: 1
+- Yopilgan trade: 0
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed QCOM: target, R=2.00
 
 ---
 
