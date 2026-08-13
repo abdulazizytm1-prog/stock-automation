@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-12
+**Date:** 2026-08-13
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -12,65 +12,73 @@
 - Fetch errors: 0
 - Failure rate: 0.0%
 
-## Signals found: 0
+## Signals found: 1
 
-### 1) AAPL
+### 1) V
+- Setup: OB wick touch (Research Candidate)
+- Trend: Bearish
+- Reason: price returned to fresh bearish OB
+- Entry: next day open
+- SL: zone high +/- 0.3%
+- TP: 2R
+- Status: pending
+- Zone status: fresh -> touched
+- Grade: C (discount=False, displacement=False)
+- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
+
+### 2) AAPL
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 2) NVDA
-- No valid setup
-- Reason: trend filter failed (RANGE)
-
-### 3) AVGO
+### 3) NVDA
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 4) QCOM
+### 4) AVGO
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 5) AMD
-- No valid setup
-- Reason: trend filter failed (RANGE)
-
-### 6) TSM
+### 5) QCOM
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 7) LLY
+### 6) AMD
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 8) JNJ
-- No valid setup
-- Reason: trend filter failed (RANGE)
-
-### 9) MRK
-- No valid setup
-- Reason: trend filter failed (RANGE)
-
-### 10) XOM
-- No valid setup
-- Reason: trend filter failed (RANGE)
-
-### 11) CVX
+### 7) TSM
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
-### 12) PG
+### 8) LLY
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 13) KO
+### 9) JNJ
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 10) MRK
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 14) HD
+### 11) XOM
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
-### 15) V
+### 12) CVX
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+
+### 13) PG
+- No valid setup
+- Reason: trend filter failed (RANGE)
+
+### 14) KO
+- No valid setup
+- Reason: trend filter failed (RANGE)
+
+### 15) HD
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
@@ -85,20 +93,22 @@
 ---
 
 ## Bugungi journal hodisalari
-- Yangi pending signal: 0
+- Yangi pending signal: 1
 - Tasdiqlangan (open position bo'ldi): 0
-- Yopilgan trade: 0
+- Yopilgan trade: 2
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
+- Closed AMD: time_stop, R=0.02
+- Closed XOM: time_stop, R=0.57
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 22
-- Win rate: 40.9%
+- Jami trade: 24
+- Win rate: 45.8%
 - Avg R: 0.24
-- Total R: 5.21
-- PF: 1.50
+- Total R: 5.80
+- PF: 1.56
 - Eng yaxshi tickerlar: V (+3.22R), PG (+2.00R), QCOM (+2.00R)
 - Eng yomon tickerlar: AAPL (-2.00R), CVX (-1.80R), TSLA (-1.00R)
 
@@ -107,7 +117,7 @@
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 22 | 40.9% | +5.21R | 1.50 |
+| C | 24 | 45.8% | +5.80R | 1.56 |
 
 ---
 
@@ -121,7 +131,7 @@
 
 # Edge Validation
 
-*(Based on 22 closed trade(s))*
+*(Based on 24 closed trade(s))*
 
 ## Grade Performance
 
@@ -129,7 +139,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 22 | 9 | 13 | 40.9% |
+| C | 24 | 11 | 13 | 45.8% |
 
 ## Symbol Performance
 
@@ -145,9 +155,9 @@
 |---|---|
 | TARGET_HIT | 7 |
 | STOP_LOSS | 8 |
-| Other | 7 |
+| Other | 9 |
 
 ## Holding Statistics
 
-- Average Holding Days: 8.2
-- Median Holding Days: 3.0
+- Average Holding Days: 9.2
+- Median Holding Days: 4.5
