@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-13",
+    "scan_date": "2026-08-14",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,11 +30,23 @@
   },
   "pending_confirmation": [
     {
-      "symbol": "V",
-      "direction": "short",
-      "zone_top": 364.54998779296875,
-      "zone_bottom": 359.9700012207031,
-      "detected_date": "2026-08-13",
+      "symbol": "AVGO",
+      "direction": "long",
+      "zone_top": 399.9200134277344,
+      "zone_bottom": 379.7099914550781,
+      "detected_date": "2026-08-14",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "TSM",
+      "direction": "long",
+      "zone_top": 424.8999938964844,
+      "zone_bottom": 418.8699951171875,
+      "detected_date": "2026-08-14",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
