@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-14",
+    "scan_date": "2026-08-17",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,23 +30,11 @@
   },
   "pending_confirmation": [
     {
-      "symbol": "AVGO",
+      "symbol": "HD",
       "direction": "long",
-      "zone_top": 399.9200134277344,
-      "zone_bottom": 379.7099914550781,
-      "detected_date": "2026-08-14",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "TSM",
-      "direction": "long",
-      "zone_top": 424.8999938964844,
-      "zone_bottom": 418.8699951171875,
-      "detected_date": "2026-08-14",
+      "zone_top": 334.0,
+      "zone_bottom": 328.79998779296875,
+      "detected_date": "2026-08-17",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -54,7 +42,36 @@
       "displacement_present": false
     }
   ],
-  "open_positions": [],
+  "open_positions": [
+    {
+      "symbol": "AVGO",
+      "direction": "long",
+      "entry_date": "2026-08-17",
+      "entry_price": 397.0799865722656,
+      "stop": 378.5187514953613,
+      "target": 434.2024567260743,
+      "risk": 18.561235076904325,
+      "zone_type": "OB",
+      "days_held": 0,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "TSM",
+      "direction": "long",
+      "entry_date": "2026-08-17",
+      "entry_price": 429.9700012207031,
+      "stop": 417.5800851135254,
+      "target": 454.7498334350586,
+      "risk": 12.389916107177726,
+      "zone_type": "OB",
+      "days_held": 0,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "closed_trades": [
     {
       "symbol": "TSM",
