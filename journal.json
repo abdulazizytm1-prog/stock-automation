@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-17",
+    "scan_date": "2026-08-18",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -30,11 +30,11 @@
   },
   "pending_confirmation": [
     {
-      "symbol": "HD",
+      "symbol": "NVDA",
       "direction": "long",
-      "zone_top": 334.0,
-      "zone_bottom": 328.79998779296875,
-      "detected_date": "2026-08-17",
+      "zone_top": 222.1999969482422,
+      "zone_bottom": 216.1999969482422,
+      "detected_date": "2026-08-18",
       "zone_status_before_signal": "fresh",
       "zone_status_after_signal": "touched",
       "setup_grade": "C",
@@ -44,27 +44,13 @@
   ],
   "open_positions": [
     {
-      "symbol": "AVGO",
+      "symbol": "HD",
       "direction": "long",
-      "entry_date": "2026-08-17",
-      "entry_price": 397.0799865722656,
-      "stop": 378.5187514953613,
-      "target": 434.2024567260743,
-      "risk": 18.561235076904325,
-      "zone_type": "OB",
-      "days_held": 0,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "TSM",
-      "direction": "long",
-      "entry_date": "2026-08-17",
-      "entry_price": 429.9700012207031,
-      "stop": 417.5800851135254,
-      "target": 454.7498334350586,
-      "risk": 12.389916107177726,
+      "entry_date": "2026-08-18",
+      "entry_price": 336.7799987792969,
+      "stop": 327.78964779663085,
+      "target": 354.76070074462893,
+      "risk": 8.99035098266603,
       "zone_type": "OB",
       "days_held": 0,
       "setup_grade": "C",
@@ -504,6 +490,42 @@
       "exit_price": 159.75,
       "exit_reason": "time_stop",
       "r_multiple": 0.5660184622450605
+    },
+    {
+      "symbol": "AVGO",
+      "direction": "long",
+      "entry_date": "2026-08-17",
+      "entry_price": 397.0799865722656,
+      "stop": 378.5187514953613,
+      "target": 434.2024567260743,
+      "risk": 18.561235076904325,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-08-18",
+      "exit_price": 378.5187514953613,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
+    },
+    {
+      "symbol": "TSM",
+      "direction": "long",
+      "entry_date": "2026-08-17",
+      "entry_price": 429.9700012207031,
+      "stop": 417.5800851135254,
+      "target": 454.7498334350586,
+      "risk": 12.389916107177726,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-08-18",
+      "exit_price": 417.5800851135254,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
     }
   ]
 }
