@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-18
+**Date:** 2026-08-19
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -12,23 +12,15 @@
 - Fetch errors: 0
 - Failure rate: 0.0%
 
-## Signals found: 1
+## Signals found: 0
 
-### 1) NVDA
-- Setup: OB wick touch (Research Candidate)
-- Trend: Bullish
-- Reason: price returned to fresh bullish OB
-- Entry: next day open
-- SL: zone low +/- 0.3%
-- TP: 2R
-- Status: pending
-- Zone status: fresh -> touched
-- Grade: C (discount=False, displacement=False)
-- Note: PF=1.03 (costsiz), cost bilan FAIL - faqat kuzatish uchun, trade tavsiyasi emas
-
-### 2) AAPL
+### 1) AAPL
 - No valid setup
 - Reason: trend filter failed (RANGE)
+
+### 2) NVDA
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 3) AVGO
 - No trade
@@ -47,8 +39,8 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 7) LLY
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 8) JNJ
 - No trade
@@ -67,8 +59,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 12) PG
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 13) KO
 - No valid setup
@@ -93,13 +85,11 @@
 ---
 
 ## Bugungi journal hodisalari
-- Yangi pending signal: 1
+- Yangi pending signal: 0
 - Tasdiqlangan (open position bo'ldi): 1
-- Yopilgan trade: 2
+- Yopilgan trade: 0
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed AVGO: stop, R=-1.00
-- Closed TSM: stop, R=-1.00
 
 ---
 
