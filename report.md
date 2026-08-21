@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-20
+**Date:** 2026-08-21
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -23,8 +23,8 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 3) AVGO
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 4) QCOM
 - No trade
@@ -59,24 +59,24 @@
 - Reason: trend filter failed (RANGE)
 
 ### 12) PG
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 13) KO
 - No valid setup
 - Reason: trend filter failed (RANGE)
 
 ### 14) HD
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 15) V
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 16) MA
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 17) TSLA
 - No trade
@@ -87,18 +87,19 @@
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
 - Tasdiqlangan (open position bo'ldi): 0
-- Yopilgan trade: 0
+- Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
+- Closed NVDA: stop, R=-1.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 26
-- Win rate: 42.3%
-- Avg R: 0.15
-- Total R: 3.80
-- PF: 1.31
+- Jami trade: 27
+- Win rate: 40.7%
+- Avg R: 0.10
+- Total R: 2.80
+- PF: 1.21
 - Eng yaxshi tickerlar: V (+3.22R), PG (+2.00R), QCOM (+2.00R)
 - Eng yomon tickerlar: AAPL (-2.00R), CVX (-1.80R), TSLA (-1.00R)
 
@@ -107,7 +108,7 @@
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 26 | 42.3% | +3.80R | 1.31 |
+| C | 27 | 40.7% | +2.80R | 1.21 |
 
 ---
 
@@ -121,7 +122,7 @@
 
 # Edge Validation
 
-*(Based on 26 closed trade(s))*
+*(Based on 27 closed trade(s))*
 
 ## Grade Performance
 
@@ -129,7 +130,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 26 | 11 | 15 | 42.3% |
+| C | 27 | 11 | 16 | 40.7% |
 
 ## Symbol Performance
 
@@ -146,10 +147,10 @@
 | Outcome | Count |
 |---|---|
 | TARGET_HIT | 7 |
-| STOP_LOSS | 10 |
+| STOP_LOSS | 11 |
 | Other | 9 |
 
 ## Holding Statistics
 
-- Average Holding Days: 8.5
+- Average Holding Days: 8.3
 - Median Holding Days: 3.0

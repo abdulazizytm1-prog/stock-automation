@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-20",
+    "scan_date": "2026-08-21",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -39,21 +39,7 @@
       "target": 354.76070074462893,
       "risk": 8.99035098266603,
       "zone_type": "OB",
-      "days_held": 3,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
-      "symbol": "NVDA",
-      "direction": "long",
-      "entry_date": "2026-08-19",
-      "entry_price": 221.6699981689453,
-      "stop": 215.53498695373534,
-      "target": 233.94002059936525,
-      "risk": 6.135011215209971,
-      "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 6,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -525,6 +511,24 @@
       "displacement_present": false,
       "exit_date": "2026-08-18",
       "exit_price": 417.5800851135254,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
+    },
+    {
+      "symbol": "NVDA",
+      "direction": "long",
+      "entry_date": "2026-08-19",
+      "entry_price": 221.6699981689453,
+      "stop": 215.53498695373534,
+      "target": 233.94002059936525,
+      "risk": 6.135011215209971,
+      "zone_type": "OB",
+      "days_held": 3,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-08-21",
+      "exit_price": 215.53498695373534,
       "exit_reason": "stop",
       "r_multiple": -1.0
     }
