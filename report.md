@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-21
+**Date:** 2026-08-24
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -15,8 +15,8 @@
 ## Signals found: 0
 
 ### 1) AAPL
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 2) NVDA
 - No trade
@@ -55,8 +55,8 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 11) CVX
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 12) PG
 - No valid setup
@@ -87,10 +87,9 @@
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
 - Tasdiqlangan (open position bo'ldi): 0
-- Yopilgan trade: 1
+- Yopilgan trade: 0
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed NVDA: stop, R=-1.00
 
 ---
 
