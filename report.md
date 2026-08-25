@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-24
+**Date:** 2026-08-25
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -23,8 +23,8 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 3) AVGO
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 4) QCOM
 - No trade
@@ -35,8 +35,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 6) TSM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 7) LLY
 - No trade
