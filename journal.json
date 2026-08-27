@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-25",
+    "scan_date": "2026-08-26",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -22,29 +22,39 @@
       "MA",
       "TSLA"
     ],
-    "market_data_status": "fresh",
+    "market_data_status": "no fresh market data / market holiday",
     "total_symbols": 17,
     "fetch_success_count": 17,
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
-  "open_positions": [
+  "pending_confirmation": [
     {
-      "symbol": "HD",
+      "symbol": "LLY",
       "direction": "long",
-      "entry_date": "2026-08-18",
-      "entry_price": 336.7799987792969,
-      "stop": 327.78964779663085,
-      "target": 354.76070074462893,
-      "risk": 8.99035098266603,
-      "zone_type": "OB",
-      "days_held": 15,
+      "zone_top": 1199.0,
+      "zone_bottom": 1171.199951171875,
+      "detected_date": "2026-08-26",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    },
+    {
+      "symbol": "TSLA",
+      "direction": "long",
+      "zone_top": 347.5,
+      "zone_bottom": 338.9599914550781,
+      "detected_date": "2026-08-26",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
     }
   ],
+  "open_positions": [],
   "closed_trades": [
     {
       "symbol": "TSM",
@@ -531,6 +541,24 @@
       "exit_price": 215.53498695373534,
       "exit_reason": "stop",
       "r_multiple": -1.0
+    },
+    {
+      "symbol": "HD",
+      "direction": "long",
+      "entry_date": "2026-08-18",
+      "entry_price": 336.7799987792969,
+      "stop": 327.78964779663085,
+      "target": 354.76070074462893,
+      "risk": 8.99035098266603,
+      "zone_type": "OB",
+      "days_held": 20,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-08-25",
+      "exit_price": 337.8800048828125,
+      "exit_reason": "time_stop",
+      "r_multiple": 0.12235407779256972
     }
   ]
 }
