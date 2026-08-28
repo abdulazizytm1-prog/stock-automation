@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-26",
+    "scan_date": "2026-08-27",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,15 +28,18 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [
+  "pending_confirmation": [],
+  "open_positions": [
     {
       "symbol": "LLY",
       "direction": "long",
-      "zone_top": 1199.0,
-      "zone_bottom": 1171.199951171875,
-      "detected_date": "2026-08-26",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
+      "entry_date": "2026-08-27",
+      "entry_price": 1182.25,
+      "stop": 1167.653201171875,
+      "target": 1211.44359765625,
+      "risk": 14.596798828124975,
+      "zone_type": "OB",
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -44,17 +47,18 @@
     {
       "symbol": "TSLA",
       "direction": "long",
-      "zone_top": 347.5,
-      "zone_bottom": 338.9599914550781,
-      "detected_date": "2026-08-26",
-      "zone_status_before_signal": "fresh",
-      "zone_status_after_signal": "touched",
+      "entry_date": "2026-08-27",
+      "entry_price": 346.1600036621094,
+      "stop": 337.9215114440918,
+      "target": 362.63698809814457,
+      "risk": 8.238492218017598,
+      "zone_type": "OB",
+      "days_held": 0,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
     }
   ],
-  "open_positions": [],
   "closed_trades": [
     {
       "symbol": "TSM",
