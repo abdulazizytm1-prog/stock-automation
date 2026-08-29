@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-27",
+    "scan_date": "2026-08-28",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -31,20 +31,6 @@
   "pending_confirmation": [],
   "open_positions": [
     {
-      "symbol": "LLY",
-      "direction": "long",
-      "entry_date": "2026-08-27",
-      "entry_price": 1182.25,
-      "stop": 1167.653201171875,
-      "target": 1211.44359765625,
-      "risk": 14.596798828124975,
-      "zone_type": "OB",
-      "days_held": 0,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    },
-    {
       "symbol": "TSLA",
       "direction": "long",
       "entry_date": "2026-08-27",
@@ -53,7 +39,7 @@
       "target": 362.63698809814457,
       "risk": 8.238492218017598,
       "zone_type": "OB",
-      "days_held": 0,
+      "days_held": 1,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -563,6 +549,24 @@
       "exit_price": 337.8800048828125,
       "exit_reason": "time_stop",
       "r_multiple": 0.12235407779256972
+    },
+    {
+      "symbol": "LLY",
+      "direction": "long",
+      "entry_date": "2026-08-27",
+      "entry_price": 1182.25,
+      "stop": 1167.653201171875,
+      "target": 1211.44359765625,
+      "risk": 14.596798828124975,
+      "zone_type": "OB",
+      "days_held": 1,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-08-28",
+      "exit_price": 1167.653201171875,
+      "exit_reason": "stop",
+      "r_multiple": -1.0
     }
   ]
 }

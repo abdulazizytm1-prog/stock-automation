@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-27
+**Date:** 2026-08-28
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -71,8 +71,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 15) V
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 16) MA
 - No trade
@@ -86,19 +86,20 @@
 
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
-- Tasdiqlangan (open position bo'ldi): 2
-- Yopilgan trade: 0
+- Tasdiqlangan (open position bo'ldi): 0
+- Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
+- Closed LLY: stop, R=-1.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 28
-- Win rate: 42.9%
-- Avg R: 0.10
-- Total R: 2.92
-- PF: 1.22
+- Jami trade: 29
+- Win rate: 41.4%
+- Avg R: 0.07
+- Total R: 1.92
+- PF: 1.13
 - Eng yaxshi tickerlar: V (+3.22R), PG (+2.00R), QCOM (+2.00R)
 - Eng yomon tickerlar: AAPL (-2.00R), CVX (-1.80R), TSLA (-1.00R)
 
@@ -107,7 +108,7 @@
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 28 | 42.9% | +2.92R | 1.22 |
+| C | 29 | 41.4% | +1.92R | 1.13 |
 
 ---
 
@@ -121,7 +122,7 @@
 
 # Edge Validation
 
-*(Based on 28 closed trade(s))*
+*(Based on 29 closed trade(s))*
 
 ## Grade Performance
 
@@ -129,7 +130,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 28 | 12 | 16 | 42.9% |
+| C | 29 | 12 | 17 | 41.4% |
 
 ## Symbol Performance
 
@@ -147,10 +148,10 @@
 | Outcome | Count |
 |---|---|
 | TARGET_HIT | 7 |
-| STOP_LOSS | 11 |
+| STOP_LOSS | 12 |
 | Other | 10 |
 
 ## Holding Statistics
 
-- Average Holding Days: 8.8
+- Average Holding Days: 8.5
 - Median Holding Days: 3.0
