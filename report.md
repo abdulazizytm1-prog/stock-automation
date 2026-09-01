@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-08-28
+**Date:** 2026-08-31
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -35,16 +35,16 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 6) TSM
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 7) LLY
 - No trade
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 8) JNJ
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 9) MRK
 - No trade
@@ -71,8 +71,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 15) V
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 16) MA
 - No trade
@@ -90,25 +90,25 @@
 - Yopilgan trade: 1
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
-- Closed LLY: stop, R=-1.00
+- Closed TSLA: target, R=2.00
 
 ---
 
 ## Rolling Statistika (jami yopilgan trade'lar)
-- Jami trade: 29
-- Win rate: 41.4%
-- Avg R: 0.07
-- Total R: 1.92
-- PF: 1.13
+- Jami trade: 30
+- Win rate: 43.3%
+- Avg R: 0.13
+- Total R: 3.92
+- PF: 1.27
 - Eng yaxshi tickerlar: V (+3.22R), PG (+2.00R), QCOM (+2.00R)
-- Eng yomon tickerlar: AAPL (-2.00R), CVX (-1.80R), TSLA (-1.00R)
+- Eng yomon tickerlar: AAPL (-2.00R), CVX (-1.80R), MA (-1.00R)
 
 ### Grade Breakdown
 | Grade | n | Win Rate | Total R | PF |
 |---|---|---|---|---|
 | A | 0 | n/a | 0.00 | n/a |
 | B | 0 | n/a | 0.00 | n/a |
-| C | 29 | 41.4% | +1.92R | 1.13 |
+| C | 30 | 43.3% | +3.92R | 1.27 |
 
 ---
 
@@ -122,7 +122,7 @@
 
 # Edge Validation
 
-*(Based on 29 closed trade(s))*
+*(Based on 30 closed trade(s))*
 
 ## Grade Performance
 
@@ -130,7 +130,7 @@
 |---|---|---|---|---|
 | A | 0 | 0 | 0 | n/a |
 | B | 0 | 0 | 0 | n/a |
-| C | 29 | 12 | 17 | 41.4% |
+| C | 30 | 13 | 17 | 43.3% |
 
 ## Symbol Performance
 
@@ -147,11 +147,11 @@
 
 | Outcome | Count |
 |---|---|
-| TARGET_HIT | 7 |
+| TARGET_HIT | 8 |
 | STOP_LOSS | 12 |
 | Other | 10 |
 
 ## Holding Statistics
 
-- Average Holding Days: 8.5
+- Average Holding Days: 8.3
 - Median Holding Days: 3.0

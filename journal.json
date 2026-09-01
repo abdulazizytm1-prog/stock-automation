@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-08-28",
+    "scan_date": "2026-08-31",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -29,22 +29,7 @@
     "failure_rate_pct": 0.0
   },
   "pending_confirmation": [],
-  "open_positions": [
-    {
-      "symbol": "TSLA",
-      "direction": "long",
-      "entry_date": "2026-08-27",
-      "entry_price": 346.1600036621094,
-      "stop": 337.9215114440918,
-      "target": 362.63698809814457,
-      "risk": 8.238492218017598,
-      "zone_type": "OB",
-      "days_held": 1,
-      "setup_grade": "C",
-      "discount_present": false,
-      "displacement_present": false
-    }
-  ],
+  "open_positions": [],
   "closed_trades": [
     {
       "symbol": "TSM",
@@ -567,6 +552,24 @@
       "exit_price": 1167.653201171875,
       "exit_reason": "stop",
       "r_multiple": -1.0
+    },
+    {
+      "symbol": "TSLA",
+      "direction": "long",
+      "entry_date": "2026-08-27",
+      "entry_price": 346.1600036621094,
+      "stop": 337.9215114440918,
+      "target": 362.63698809814457,
+      "risk": 8.238492218017598,
+      "zone_type": "OB",
+      "days_held": 3,
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false,
+      "exit_date": "2026-08-31",
+      "exit_price": 362.63698809814457,
+      "exit_reason": "target",
+      "r_multiple": 2.0
     }
   ]
 }
