@@ -1,6 +1,6 @@
 # DAILY TRADING RESEARCH REPORT
 
-**Date:** 2026-09-02
+**Date:** 2026-09-03
 
 > Bu BOT TRADE QILMAYDI. Faqat kuzatadi va yozib boradi. OB = Research Candidate (PF=1.03 costsiz, cost bilan FAIL). FVG = DISABLED (3 testda 0 trade).
 
@@ -19,8 +19,8 @@
 - Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 2) NVDA
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 3) AVGO
 - No valid setup
@@ -39,8 +39,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 7) LLY
-- No valid setup
-- Reason: trend filter failed (RANGE)
+- No trade
+- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
 
 ### 8) JNJ
 - No trade
@@ -75,8 +75,8 @@
 - Reason: trend filter failed (RANGE)
 
 ### 16) MA
-- No trade
-- Reason: latest candle fresh OB zonega birinchi valid retest qilmadi
+- No valid setup
+- Reason: trend filter failed (RANGE)
 
 ### 17) TSLA
 - No trade
@@ -86,7 +86,7 @@
 
 ## Bugungi journal hodisalari
 - Yangi pending signal: 0
-- Tasdiqlangan (open position bo'ldi): 2
+- Tasdiqlangan (open position bo'ldi): 0
 - Yopilgan trade: 0
 - Rejected signal: 0
 - Intrabar ambiguity count: 0
