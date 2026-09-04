@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scan_date": "2026-09-03",
+    "scan_date": "2026-09-04",
     "scanner_version": "2026.06.20",
     "halal_filter_mode": "static_watchlist",
     "final_watchlist": [
@@ -28,7 +28,20 @@
     "fetch_error_count": 0,
     "failure_rate_pct": 0.0
   },
-  "pending_confirmation": [],
+  "pending_confirmation": [
+    {
+      "symbol": "AAPL",
+      "direction": "long",
+      "zone_top": 321.239990234375,
+      "zone_bottom": 312.79998779296875,
+      "detected_date": "2026-09-04",
+      "zone_status_before_signal": "fresh",
+      "zone_status_after_signal": "touched",
+      "setup_grade": "C",
+      "discount_present": false,
+      "displacement_present": false
+    }
+  ],
   "open_positions": [
     {
       "symbol": "KO",
@@ -39,7 +52,7 @@
       "target": 90.51236296081544,
       "risk": 1.3086831588745156,
       "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 3,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
@@ -53,7 +66,7 @@
       "target": 393.5935915527343,
       "risk": 16.491803100585912,
       "zone_type": "OB",
-      "days_held": 1,
+      "days_held": 3,
       "setup_grade": "C",
       "discount_present": false,
       "displacement_present": false
